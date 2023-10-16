@@ -78,6 +78,7 @@
 | user.language.country_code                         | string   | ex: Arabic=>sa, English=>gb                                                                              |
 | user.language.order                                | int      | Sort language in menu                                                                                    |
 #}
+
 <!DOCTYPE html>
 <html lang="{{ user.language.code }}" dir="{{ user.language.dir }}">
 <!-- بسم الله الرحمن الرحيم -->
@@ -117,7 +118,9 @@
 <div class="app-inner hdhhdhd flex flex-col min-h-full">
     {% hook 'body:start' %}
     {% component 'header.header' %}
-    {% block content %}{% endblock %}
+    {% block content %}
+      
+    {% endblock %}
     {% component 'footer.footer' %}
 </div>
 {% hook 'body:end' %}

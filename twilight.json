@@ -757,7 +757,7 @@
             "fields": [
                 {
                     "id": "title",
-                    "key": "ba71f40a-e12f-4280-9fc4-9d92b862189e",
+                    "key": "dc6bd943-1f32-4755-accc-c196e83382e5",
                     "type": "static",
                     "format": "title",
                     "label": "Title",
@@ -768,18 +768,18 @@
                 },
                 {
                     "id": "test.num",
-                    "key": "2ce9cd2d-2789-4e2c-a410-46a761a348d2",
+                    "key": "36f1fc73-0991-42eb-8f19-b753e1135c09",
                     "type": "number",
                     "format": "float",
                     "inputType": "number",
                     "label": "Number",
                     "description": null,
                     "labelHTML": null,
-                    "placeholder": "Input a number between -10.10 and 100.",
+                    "placeholder": "0",
                     "icon": "sicon-hashtag",
-                    "value": null,
+                    "value": 1,
                     "required": false,
-                    "step": 1,
+                    "step": "100",
                     "minimum": 1,
                     "maximum": 100
                 }

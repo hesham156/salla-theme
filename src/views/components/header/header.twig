@@ -7,6 +7,9 @@
 #}
 {% set important_links = theme.settings.get('important_links') %}
 <header class="store-header">
+  {% if  store.settings.get('is_menu_on_desk')   %}
+<h1 class="mmmm">ddddd</h1>
+{% endif %}
     {# Top Nav #}
     <div class="top-navbar">
         <div class="container flex justify-between">
@@ -26,9 +29,7 @@
                         <salla-localization-modal></salla-localization-modal>
                     {% endif %}
                 </div>
-{% if true  %}
-<h1>{{ store.settings.get('is_menu_on_desk') }}</h1>
-{% endif %}
+
                 {# Scopes | Branches #}
                 {% if store.scope %}
                     <button class="btn--rounded-gray"

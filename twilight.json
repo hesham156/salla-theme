@@ -757,7 +757,7 @@
             "fields": [
                 {
                     "id": "title",
-                    "key": "b4c3358f-96f0-4260-8c02-67b0703943e2",
+                    "key": "ba71f40a-e12f-4280-9fc4-9d92b862189e",
                     "type": "static",
                     "format": "title",
                     "label": "Title",
@@ -767,8 +767,8 @@
                     "defaulted": true
                 },
                 {
-                    "id": "number",
-                    "key": "2c076d8e-2585-46e2-8e71-afcfa7cba23e",
+                    "id": "test.num",
+                    "key": "2ce9cd2d-2789-4e2c-a410-46a761a348d2",
                     "type": "number",
                     "format": "float",
                     "inputType": "number",
@@ -781,8 +781,7 @@
                     "required": true,
                     "step": 0.1,
                     "minimum": -10.1,
-                    "maximum": 100,
-                    "defaulted": true
+                    "maximum": 100
                 }
             ]
         }

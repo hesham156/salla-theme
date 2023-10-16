@@ -165,7 +165,8 @@
             "type": "boolean",
             "id": "is_menu_on_desk",
             "label": "عرض لبلبل",
-            "format": "switch"
+            "format": "switch",
+            "selected": false
         }
     ],
     "components": [

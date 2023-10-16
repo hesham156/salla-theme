@@ -7,9 +7,8 @@
 #}
 {% set important_links = theme.settings.get('important_links') %}
 <header class="store-header">
-  {% if  store.settings.get('is_menu_on_desk')   %}
-<h1 class="mmmm">ddddd</h1>
-{% endif %}
+<h1 class={{ store.settings.get('is_menu_on_desk') ? "ddd" : "ffff" }}>ddddfffd</h1>
+
     {# Top Nav #}
     <div class="top-navbar">
         <div class="container flex justify-between">

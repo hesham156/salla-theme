@@ -748,6 +748,13 @@
                     ]
                 }
             ]
+        },
+        {
+            "key": "dac62ca5-ad1a-422d-826b-425120123f05",
+            "title": "اختبار",
+            "icon": "sicon-store",
+            "path": "home.enhanced-test",
+            "fields": []
         }
     ],
     "support_url": "https://example.com",

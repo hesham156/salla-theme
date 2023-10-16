@@ -754,7 +754,37 @@
             "title": "اختبار",
             "icon": "sicon-store",
             "path": "home.enhanced-test",
-            "fields": []
+            "fields": [
+                {
+                    "id": "title",
+                    "key": "b4c3358f-96f0-4260-8c02-67b0703943e2",
+                    "type": "static",
+                    "format": "title",
+                    "label": "Title",
+                    "value": "fffffffffff",
+                    "variant": "h1",
+                    "icon": "sicon-format-text",
+                    "defaulted": true
+                },
+                {
+                    "id": "number",
+                    "key": "2c076d8e-2585-46e2-8e71-afcfa7cba23e",
+                    "type": "number",
+                    "format": "float",
+                    "inputType": "number",
+                    "label": "Number",
+                    "description": null,
+                    "labelHTML": null,
+                    "placeholder": "Input a number between -10.10 and 100.",
+                    "icon": "sicon-hashtag",
+                    "value": null,
+                    "required": true,
+                    "step": 0.1,
+                    "minimum": -10.1,
+                    "maximum": 100,
+                    "defaulted": true
+                }
+            ]
         }
     ],
     "support_url": "https://example.com",

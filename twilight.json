@@ -160,6 +160,12 @@
             ],
             "source": "Manual",
             "required": true
+        },
+        {
+            "type": "boolean",
+            "id": "is_menu_on_desk",
+            "label": "عرض لبلبل",
+            "format": "switch"
         }
     ],
     "components": [

@@ -234,10 +234,16 @@ salla-user-menu{
 }
 .new-slide{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  width: 100% !important;
+
 }
-.scale-up-ver-bottom {
+.flex-center.container.pb-16.sm\:pb-0.home-slider__content.relative.h-full{
+  max-width: 100%;
+    padding: 0;
+}
+.swiper-slide-active .scale-up-ver-bottom {
 	-webkit-animation: scale-up-ver-bottom 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 	        animation: scale-up-ver-bottom 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }

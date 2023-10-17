@@ -748,42 +748,6 @@
                     ]
                 }
             ]
-        },
-        {
-            "key": "dac62ca5-ad1a-422d-826b-425120123f05",
-            "title": "اختبار",
-            "icon": "sicon-store",
-            "path": "home.enhanced-test",
-            "fields": [
-                {
-                    "id": "title",
-                    "key": "dc6bd943-1f32-4755-accc-c196e83382e5",
-                    "type": "static",
-                    "format": "title",
-                    "label": "Title",
-                    "value": "fffffffffff",
-                    "variant": "h1",
-                    "icon": "sicon-format-text",
-                    "defaulted": true
-                },
-                {
-                    "id": "test.num",
-                    "key": "36f1fc73-0991-42eb-8f19-b753e1135c09",
-                    "type": "number",
-                    "format": "float",
-                    "inputType": "number",
-                    "label": "Number",
-                    "description": null,
-                    "labelHTML": null,
-                    "placeholder": "0",
-                    "icon": "sicon-hashtag",
-                    "value": 1,
-                    "required": false,
-                    "step": "100",
-                    "minimum": 1,
-                    "maximum": 100
-                }
-            ]
         }
     ],
     "support_url": "https://example.com",

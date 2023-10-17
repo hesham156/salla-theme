@@ -1,0 +1,21 @@
+<section class="s-block home-slider s-block--hero-slider s-block--full-bg wide-placeholder">     <salla-slider 
+      id="main-slider-{{ position }}" 
+      class="home-slider main-slider" 
+      auto-play 
+      loop
+      type="fullwidth">
+        <div slot="items">
+            {# {% for slide in component.slides %} #}
+                <div class="swiper-lazy-wrap w-full min-h-[300px] lg:min-h-[528px] bg-dark">
+                    <div data-background="{{ component.image }}" class="swiper-lazy"></div>
+                    <div class="flex-center container pb-16 sm:pb-0 home-slider__content relative h-full">
+                        <div class=" w-4/6 text-center md:w-7/12 lg:w-5/12 text-white">
+                              <img src={{ component.image }} alt="">
+
+                        </div>
+                    </div>
+                </div>
+            {# {% endfor %} #}
+        </div>
+    </salla-slider>
+</section> 

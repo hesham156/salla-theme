@@ -748,13 +748,6 @@
                     ]
                 }
             ]
-        },
-        {
-            "key": "8bbfc3dd-72e8-4836-a5af-71ba3251166e",
-            "title": "بنر  مع نص",
-            "icon": "sicon-store",
-            "path": ".home.bannarWithText",
-            "fields": []
         }
     ],
     "support_url": "https://example.com",

@@ -756,18 +756,18 @@
             "path": ".home.bannar-with-text",
             "fields": [
                 {
-                    "id": "albnr",
-                    "key": "5ec52350-77ca-44f0-9c73-5e8c0124579b",
+                    "id": "slider",
+                    "key": "93ebc3c0-3d69-4ecc-903f-2cf14425d420",
                     "type": "static",
                     "format": "title",
-                    "label": "البنر",
-                    "value": "البنر",
+                    "label": "اعدادات الاسلايد",
+                    "value": "اعدادات الاسلايد",
                     "variant": "h1",
                     "icon": "sicon-format-text"
                 },
                 {
-                    "id": "sorh_alkhlfeh",
-                    "key": "162c6a71-1783-4258-980d-b770a3723236",
+                    "id": "img_bg",
+                    "key": "32b5cd1e-88c4-439e-8cad-5585608fcb42",
                     "type": "string",
                     "format": "image",
                     "label": "صوره الخلفيه",
@@ -779,8 +779,8 @@
                     "required": false
                 },
                 {
-                    "id": "lon_alkhlfeh",
-                    "key": "d53d2abf-b23b-4e29-ace5-88e72465e62a",
+                    "id": "color_bg",
+                    "key": "5361342e-a33b-4bcc-8fde-93b2a29713db",
                     "type": "string",
                     "format": "color",
                     "inputType": "color",
@@ -793,7 +793,7 @@
                 },
                 {
                     "id": "collection",
-                    "key": "b3efe6e3-71ed-4d20-a4e1-fa7d4d4e667c",
+                    "key": "6f58aad0-8cc3-4c1b-9607-9a27736fa88b",
                     "type": "collection",
                     "format": "collection",
                     "label": "Collection",
@@ -803,22 +803,21 @@
                     "icon": "sicon-list-add",
                     "fields": [
                         {
-                            "id": "الصوره_الاولي_في_البنر_copy",
-                            "key": "2ccb459f-6dc6-4fae-9133-47a88c1bfd4e",
+                            "id": "first_img",
+                            "key": "69c59de1-911e-4335-b365-621675c14aeb",
                             "type": "string",
                             "format": "image",
-                            "label": "الصوره الاولي في البنر copy",
+                            "label": "الصوره الاولي في البنر",
                             "description": null,
                             "labelHTML": null,
                             "placeholder": "e.g. https://hostname.com/image.png",
                             "icon": "sicon-image",
                             "value": null,
-                            "required": false,
-                            "defaulted": true
+                            "required": false
                         },
                         {
-                            "id": "alsorh_alaole_fe_albnr",
-                            "key": "bcdf6bed-5c97-41f1-a731-66430899a88f",
+                            "id": "second_img",
+                            "key": "c09cda61-fd4d-4145-9920-7905d67c9a40",
                             "type": "string",
                             "format": "image",
                             "label": "الصوره الثانيه في البنر",
@@ -830,8 +829,8 @@
                             "required": false
                         },
                         {
-                            "id": "alaanoan",
-                            "key": "3591f78d-01e6-4543-b1bb-928953cf0580",
+                            "id": "bannar_title",
+                            "key": "9e0a5f97-c02e-46ef-8756-26be509a2921",
                             "type": "string",
                             "format": "textarea",
                             "label": "العنوان",
@@ -846,8 +845,8 @@
                             "maxLength": 255
                         },
                         {
-                            "id": "alosf",
-                            "key": "4dd1738d-46db-469f-9fa0-7166ae5593d9",
+                            "id": "bannar_des",
+                            "key": "6702eef4-e6e3-42f4-bdb9-035ed2c8372d",
                             "type": "string",
                             "format": "richtext",
                             "label": "الوصف",
@@ -862,8 +861,8 @@
                             "maxLength": 1000
                         },
                         {
-                            "id": "ns_alzr",
-                            "key": "1c194536-6ab4-4a13-903d-3cf74ba7c9a5",
+                            "id": "btn_text",
+                            "key": "78f7cc0b-caeb-4b5f-b23a-d3bf1cc6d2c7",
                             "type": "string",
                             "format": "textarea",
                             "label": "نص الزر",
@@ -878,8 +877,8 @@
                             "maxLength": 255
                         },
                         {
-                            "id": "alrabt",
-                            "key": "4f25cd27-f95e-459c-a28d-773ca46694ba",
+                            "id": "btn_lnk",
+                            "key": "703f392a-63d6-481c-9f3d-04b869239b42",
                             "type": "string",
                             "format": "url",
                             "inputType": "url",

@@ -3840,6 +3840,9 @@ input[type=radio].sr-only:checked ~ div#nav-cart span {
 [dir="ltr"] #nav-cart span{left:-0.5rem}
 [dir="rtl"] #nav-cart span{right:-0.5rem}
 .header-search .s-search-results{z-index:10}
+.top-navbar > div > div:last-child {
+  flex: initial;
+}
 .store-footer{position:relative;margin-top:2rem;--tw-bg-opacity:1;background-color:rgba(14, 15, 15, 1);background-color:rgba(14, 15, 15, var(--tw-bg-opacity));--tw-text-opacity:1;color:rgba(255, 255, 255, 1);color:rgba(255, 255, 255, var(--tw-text-opacity))}
 @media (min-width: 640px){
 .store-footer{margin-top:4rem}}

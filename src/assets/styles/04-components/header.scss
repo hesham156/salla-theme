@@ -229,3 +229,6 @@ salla-user-menu{
     @apply z-10;
   }
 }
+.top-navbar > div >div:last-child{
+  flex: unset;
+}

@@ -3843,6 +3843,24 @@ input[type=radio].sr-only:checked ~ div#nav-cart span {
 .top-navbar > div > div:last-child {
   flex: initial;
 }
+.new-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.scale-up-ver-bottom {
+  animation: scale-up-ver-bottom 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+@keyframes scale-up-ver-bottom {
+  0% {
+    transform: scaleY(0.4);
+    transform-origin: 0% 100%;
+  }
+  100% {
+    transform: scaleY(1);
+    transform-origin: 0% 100%;
+  }
+}
 .store-footer{position:relative;margin-top:2rem;--tw-bg-opacity:1;background-color:rgba(14, 15, 15, 1);background-color:rgba(14, 15, 15, var(--tw-bg-opacity));--tw-text-opacity:1;color:rgba(255, 255, 255, 1);color:rgba(255, 255, 255, var(--tw-text-opacity))}
 @media (min-width: 640px){
 .store-footer{margin-top:4rem}}

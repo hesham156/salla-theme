@@ -757,27 +757,70 @@
             "fields": [
                 {
                     "id": "title",
-                    "key": "affb52cc-24a4-4dcf-a19f-b66c21064940",
+                    "key": "d683c922-1b0a-44cc-8670-5daca374ede3",
                     "type": "static",
                     "format": "title",
                     "label": "Title",
-                    "value": "الصوره الاولي",
+                    "value": "البنر",
                     "variant": "h1",
                     "icon": "sicon-format-text",
                     "defaulted": true
                 },
                 {
                     "id": "image",
-                    "key": "bcb03f77-ff5a-48f3-9608-31258fbe809c",
+                    "key": "e2f6dc74-1f3b-4b2d-ae93-895068ac8b63",
                     "type": "string",
                     "format": "image",
                     "label": "Image",
-                    "description": null,
+                    "description": "الخلفيه صوره",
                     "labelHTML": null,
                     "placeholder": "e.g. https://hostname.com/image.png",
                     "icon": "sicon-image",
                     "value": null,
                     "required": false,
+                    "defaulted": true
+                },
+                {
+                    "id": "color",
+                    "key": "662ba9ba-4fea-4ef8-84e3-6482d2a1f019",
+                    "type": "string",
+                    "format": "color",
+                    "inputType": "color",
+                    "label": "Color",
+                    "description": "الخلفيه لون",
+                    "labelHTML": null,
+                    "icon": "sicon-format-fill",
+                    "value": "#004956",
+                    "required": false,
+                    "defaulted": true
+                },
+                {
+                    "id": "collection",
+                    "key": "60aee39f-0372-4a65-b52a-5543376cb954",
+                    "type": "collection",
+                    "format": "collection",
+                    "label": "Collection",
+                    "description": "البنر",
+                    "labelHTML": null,
+                    "item_label": null,
+                    "icon": "sicon-list-add",
+                    "fields": [
+                        {
+                            "id": "title_1",
+                            "key": "03bcba56-2b03-461c-b770-15fa03d5ee2e",
+                            "type": "static",
+                            "format": "title",
+                            "label": "Title 1",
+                            "value": "الصوره الاولي",
+                            "variant": "h1",
+                            "icon": "sicon-format-text",
+                            "defaulted": true
+                        }
+                    ],
+                    "value": [],
+                    "required": false,
+                    "minLength": 1,
+                    "maxLength": 5,
                     "defaulted": true
                 }
             ]

@@ -756,47 +756,44 @@
             "path": ".home.bannar-with-text",
             "fields": [
                 {
-                    "id": "title",
-                    "key": "d683c922-1b0a-44cc-8670-5daca374ede3",
+                    "id": "albnr",
+                    "key": "396ce111-956a-47d1-a4cd-fccc852a3916",
                     "type": "static",
                     "format": "title",
-                    "label": "Title",
+                    "label": "البنر",
                     "value": "البنر",
                     "variant": "h1",
-                    "icon": "sicon-format-text",
-                    "defaulted": true
+                    "icon": "sicon-format-text"
                 },
                 {
-                    "id": "image",
-                    "key": "e2f6dc74-1f3b-4b2d-ae93-895068ac8b63",
+                    "id": "sorh_alkhlfeh",
+                    "key": "617743cd-14d2-47b8-aa19-e199e3fa1b5d",
                     "type": "string",
                     "format": "image",
-                    "label": "Image",
-                    "description": "الخلفيه صوره",
+                    "label": "صوره الخلفيه",
+                    "description": null,
                     "labelHTML": null,
                     "placeholder": "e.g. https://hostname.com/image.png",
                     "icon": "sicon-image",
                     "value": null,
-                    "required": false,
-                    "defaulted": true
+                    "required": false
                 },
                 {
-                    "id": "color",
-                    "key": "662ba9ba-4fea-4ef8-84e3-6482d2a1f019",
+                    "id": "lon_alkhlfeh",
+                    "key": "528bb2d0-5ff8-465b-89e5-3569a9b7b926",
                     "type": "string",
                     "format": "color",
                     "inputType": "color",
-                    "label": "Color",
-                    "description": "الخلفيه لون",
+                    "label": "لون الخلفيه",
+                    "description": null,
                     "labelHTML": null,
                     "icon": "sicon-format-fill",
                     "value": "#004956",
-                    "required": false,
-                    "defaulted": true
+                    "required": false
                 },
                 {
                     "id": "collection",
-                    "key": "60aee39f-0372-4a65-b52a-5543376cb954",
+                    "key": "34e47b48-cf7c-42ae-8c66-ef47176751f9",
                     "type": "collection",
                     "format": "collection",
                     "label": "Collection",
@@ -807,13 +804,27 @@
                     "fields": [
                         {
                             "id": "title_1",
-                            "key": "03bcba56-2b03-461c-b770-15fa03d5ee2e",
+                            "key": "40cfbbb9-6d12-435d-8219-d00f97577662",
                             "type": "static",
                             "format": "title",
                             "label": "Title 1",
                             "value": "الصوره الاولي",
                             "variant": "h1",
                             "icon": "sicon-format-text",
+                            "defaulted": true
+                        },
+                        {
+                            "id": "image",
+                            "key": "17f4e5f2-ac8f-4f2f-90f9-40d5cc774a21",
+                            "type": "string",
+                            "format": "image",
+                            "label": "Image",
+                            "description": null,
+                            "labelHTML": null,
+                            "placeholder": "e.g. https://hostname.com/image.png",
+                            "icon": "sicon-image",
+                            "value": null,
+                            "required": false,
                             "defaulted": true
                         }
                     ],

@@ -10,16 +10,16 @@
                     <div data-background="{{ component.img_bg }}" class="swiper-lazy"></div>
                     <div class="flex-center container pb-16 sm:pb-0 home-slider__content relative h-full">
                         <div class="new-slide w-4/6 text-center md:w-7/12 lg:w-5/12 text-white ">
-                             <div class="bannar-first-img">
+                             <div class="bannar-first-img ">
                                    <img class="scale-up-ver-bottom" src={{ slide.second_img }} alt="">
                                </div>
-                              <div class="middel-text">
+                              <div class="middel-text ">
                                    <h3>{{ slide.bannar_title }}</h3>
-                                   <p>{{ slide.bannar_title }}</p>
-
+                                   <p>{{ slide.bannar_des }}</p>
+                                    <a href="{{slide.btn_lnk}}">{{slide.btn_text}}</a>
                                </div>
-                              <div class="bannar-second-img">
-                              <img class="scale-up-ver-bottom" src={{ slide.first_img }} alt="">
+                              <div class="bannar-second-img ">
+                              <img style="margin: auto; margin-left: 0;" class="scale-up-ver-bottom" src={{ slide.first_img }} alt="">
                               </div>
                         </div>
                     </div>

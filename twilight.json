@@ -754,7 +754,33 @@
             "title": "صوره مع نص",
             "icon": "sicon-store",
             "path": ".home.bannar-with-text",
-            "fields": []
+            "fields": [
+                {
+                    "id": "title",
+                    "key": "affb52cc-24a4-4dcf-a19f-b66c21064940",
+                    "type": "static",
+                    "format": "title",
+                    "label": "Title",
+                    "value": "الصوره الاولي",
+                    "variant": "h1",
+                    "icon": "sicon-format-text",
+                    "defaulted": true
+                },
+                {
+                    "id": "image",
+                    "key": "bcb03f77-ff5a-48f3-9608-31258fbe809c",
+                    "type": "string",
+                    "format": "image",
+                    "label": "Image",
+                    "description": null,
+                    "labelHTML": null,
+                    "placeholder": "e.g. https://hostname.com/image.png",
+                    "icon": "sicon-image",
+                    "value": null,
+                    "required": false,
+                    "defaulted": true
+                }
+            ]
         }
     ],
     "support_url": "https://example.com",

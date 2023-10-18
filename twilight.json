@@ -910,9 +910,9 @@
                 {
                     "type": "boolean",
                     "icon": "sicon-toggle-off",
-                    "label": "وضع عمودي للمنتجات في مربع المنتجات الثابتة في الصفحة الرئيسية",
+                    "label": "عرض المميزات اسلايدر",
                     "description": "",
-                    "id": "vertical_fixed_products",
+                    "id": "features_view",
                     "format": "switch",
                     "required": false,
                     "value": false,

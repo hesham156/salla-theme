@@ -1,19 +1,12 @@
-<section class="features">
-    {% for feature in component.features_lnks  %}
-       <i class="{{feature.feature_icon}}"></i> 
-    {% endfor %}
-</section>
 <section class="features s-block s-block--features container">
     <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-4 sm:gap-6 xl:gap-8">
+    {% if component.features_view %}
       {% for feature in component.features_lnks %}
-          <div class="s-block--features__item">
-            <div class="feature-icon">
-              <i class="{{ feature.feature_icon }}"></i>
-            </div>
-            <h4>{{ feature.feature_title }}</h4>
-            <p>{{ feature.feature_des }}</p>
-          </div>
+        {% include 'pages.partials.slider' with {icon:feature.feature_icon,title:feature.feature_title,des:feature.feature_des} %}
       {% endfor %}
-      
+    {% else %}
+        <div class="feature-lide">
+        </div>
+    {% endif %}  
     </div>
 </section>

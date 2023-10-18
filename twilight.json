@@ -906,7 +906,96 @@
             "title": "المميزات",
             "icon": "sicon-store",
             "path": ".home.features",
-            "fields": []
+            "fields": [
+                {
+                    "id": "title",
+                    "key": "5c1c9523-5125-4fbb-905c-7d13fd0d80bd",
+                    "type": "static",
+                    "format": "title",
+                    "label": "Title",
+                    "value": "العنوان",
+                    "variant": "h1",
+                    "icon": "sicon-format-text",
+                    "defaulted": true
+                },
+                {
+                    "id": "features_title",
+                    "key": "17d95176-034b-457e-8764-2c4e7401fd56",
+                    "type": "string",
+                    "format": "textarea",
+                    "label": "Text Area",
+                    "description": null,
+                    "labelHTML": null,
+                    "placeholder": "Your text here",
+                    "icon": "sicon-typography",
+                    "value": null,
+                    "multilanguage": false,
+                    "required": false,
+                    "minLength": 20,
+                    "maxLength": 255
+                },
+                {
+                    "id": "features_lnks",
+                    "key": "b9ffb1a5-1a1a-4298-9070-fc67522260eb",
+                    "type": "collection",
+                    "format": "collection",
+                    "label": "Collection",
+                    "description": null,
+                    "labelHTML": null,
+                    "item_label": "الميزه",
+                    "icon": "sicon-list-add",
+                    "fields": [
+                        {
+                            "id": "feature_icon",
+                            "key": "c65ece94-e5fc-40d1-ad8a-0616d85d28fa",
+                            "type": "string",
+                            "format": "icon",
+                            "label": "Icon Picker",
+                            "description": null,
+                            "labelHTML": null,
+                            "icon": "sicon-user-circle",
+                            "value": "sicon-store",
+                            "required": false
+                        },
+                        {
+                            "id": "feature_title",
+                            "key": "4ef9abd2-1858-43f7-81b2-f1819346b3eb",
+                            "type": "string",
+                            "format": "textarea",
+                            "label": "Text Area 1",
+                            "description": null,
+                            "labelHTML": null,
+                            "placeholder": "Your text here",
+                            "icon": "sicon-typography",
+                            "value": null,
+                            "multilanguage": true,
+                            "required": false,
+                            "minLength": "2",
+                            "maxLength": 255
+                        },
+                        {
+                            "id": "feature_des",
+                            "key": "afa1e1c3-a578-429f-8e6b-a2c30eb0f5e9",
+                            "type": "string",
+                            "format": "textarea",
+                            "label": "Text Area 2",
+                            "description": null,
+                            "labelHTML": null,
+                            "placeholder": "Your text here",
+                            "icon": "sicon-typography",
+                            "value": null,
+                            "multilanguage": false,
+                            "required": false,
+                            "minLength": 20,
+                            "maxLength": 255
+                        }
+                    ],
+                    "value": [],
+                    "required": false,
+                    "minLength": 1,
+                    "maxLength": "10"
+                }
+            ]
         }
     ],
     "support_url": "https://example.com",

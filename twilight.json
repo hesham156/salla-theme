@@ -908,6 +908,17 @@
             "path": ".home.features",
             "fields": [
                 {
+                    "type": "boolean",
+                    "icon": "sicon-toggle-off",
+                    "label": "وضع عمودي للمنتجات في مربع المنتجات الثابتة في الصفحة الرئيسية",
+                    "description": "",
+                    "id": "vertical_fixed_products",
+                    "format": "switch",
+                    "required": false,
+                    "value": false,
+                    "selected": false
+                },
+                {
                     "id": "title",
                     "key": "5c1c9523-5125-4fbb-905c-7d13fd0d80bd",
                     "type": "static",

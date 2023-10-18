@@ -900,6 +900,13 @@
                     "defaulted": true
                 }
             ]
+        },
+        {
+            "key": "0394fe5b-629a-45e4-9deb-6c3080935575",
+            "title": "المميزات",
+            "icon": "sicon-store",
+            "path": ".home.features",
+            "fields": []
         }
     ],
     "support_url": "https://example.com",

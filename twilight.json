@@ -931,7 +931,7 @@
                     "value": null,
                     "multilanguage": false,
                     "required": false,
-                    "minLength": 20,
+                    "minLength": 2,
                     "maxLength": 255
                 },
                 {
@@ -970,7 +970,7 @@
                             "value": null,
                             "multilanguage": true,
                             "required": false,
-                            "minLength": "2",
+                            "minLength": 2,
                             "maxLength": 255
                         },
                         {
@@ -986,7 +986,7 @@
                             "value": null,
                             "multilanguage": false,
                             "required": false,
-                            "minLength": 20,
+                            "minLength": 2,
                             "maxLength": 255
                         }
                     ],

@@ -237,6 +237,7 @@ salla-user-menu{
   justify-content: space-between;
   align-items: center;
   width: 100% !important;
+  height: 100% !important;
 
 }
 .flex-center.container.pb-16.sm\:pb-0.home-slider__content.relative.h-full{
@@ -244,32 +245,52 @@ salla-user-menu{
     padding: 0;
 }
 .bannar-first-img,.bannar-second-img{
-  width: 40%;
+  height: 100% !important;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.s-block--hero-slider .swiper-slide .swiper-lazy:after{
+  display: none !important;
 }
 .middel-text{
   width: 20%;
 }
+a.slide-lnk {
+  background-image: url(../../images/btn.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 270px;
+  display: block;
+  height: 160px;
+}
+.s-block--hero-slider .swiper-slide {
+  height: 700px !important;
+}
 .swiper-slide-active .scale-up-ver-bottom {
-	-webkit-animation: slide-top 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-top 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  -webkit-animation: slide-fwd-center 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-fwd-center 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
-@-webkit-keyframes slide-top {
+
+ @-webkit-keyframes slide-fwd-center {
   0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
   }
   100% {
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
+    -webkit-transform: translateZ(160px);
+            transform: translateZ(160px);
   }
 }
-@keyframes slide-top {
+@keyframes slide-fwd-center {
   0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
   }
   100% {
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
+    -webkit-transform: translateZ(160px);
+            transform: translateZ(160px);
   }
 }
+

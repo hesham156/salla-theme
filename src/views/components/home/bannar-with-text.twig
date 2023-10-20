@@ -1,3 +1,4 @@
+{% if component.bannar_slider %}
 <section class="s-block home-slider s-block--hero-slider s-block--full-bg wide-placeholder">
 	<salla-slider id="main-slider-{{ position }}" class="home-slider main-slider" auto-play loop type="fullwidth">
 		<div slot="items">
@@ -26,3 +27,4 @@
 		</div>
 	</salla-slider>
 </section>
+{% endif %}

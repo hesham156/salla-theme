@@ -1,0 +1,210 @@
+
+    {% if component.features_view %} 
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+section.test *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+section.test{
+  background: rgb(52, 73, 94);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 21px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+section.test img{
+  width: 100%;
+  height: 100%;
+}
+.slider-container {
+  width: 1500px;
+  height: 280px;
+  overflow: hidden;
+}
+
+.slider-container .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+.container .container-box {
+  width: 450px;
+  height: 100%;
+  margin: 0 25px;
+  background: rgb(52, 152, 219);
+  color: rgb(41, 128, 185);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-box header {
+  transition: 400ms all;
+}
+
+.container-box:hover header {
+  transform: scale(1.2) rotate(15deg);
+}
+
+.buttons {
+  width: auto;
+  height: auto;
+  display: flex;
+  margin: 25px 0;
+}
+
+.btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  border: 2px solid rgb(255, 255, 255);
+  cursor: pointer;
+  transition: .3s ease-in-out;
+  margin: 0 25px;
+  color: rgb(255, 255, 255);
+  font-size: 19px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+.btn:nth-child(1) i {
+  transform: translate(18px, 0);
+}
+
+.btn:nth-child(2) i {
+  transform: translate(-18px, 0);
+}
+
+.btn:hover {
+  border-color: rgb(52, 152, 219);
+  background: rgb(52, 152, 219);
+}
+
+    </style>
+    <section dir="ltr"  class="test s-block s-block--best-offers container overflow-hidden">
+      <div class="slider-container">
+        <div class="container container2">
+          <div class="container-box">
+            <header><h4>Lorem Ipsum</h4></header>
+          </div>
+          <div class="container-box">
+            <header><h4>Lorem Ipsum</h4></header>
+          </div>
+          <div class="container-box">
+            <header><h4>Lorem Ipsum</h4></header>
+          </div>
+          <div class="container-box">
+            <header><h4>Lorem Ipsum</h4></header>
+          </div>
+          <div class="container-box">
+            <header><h4>Lorem Ipsum</h4></header>
+          </div>
+          <div class="container-box">
+            <header><h4>Lorem Ipsum</h4></header>
+          </div>
+          <div class="container-box">
+            <header><h4>Lorem Ipsum</h4></header>
+          </div>
+          <div class="container-box">
+            <header><h4>Lorem Ipsum</h4></header>
+          </div>
+          <div class="container-box">
+            <header><h4>Lorem Ipsum</h4></header>
+          </div>
+          <div class="container-box">
+            <header><h4>Lorem Ipsum</h4></header>
+          </div>
+          <div class="container-box">
+            <header><h4>Lorem Ipsum</h4></header>
+          </div>
+          <div class="container-box">
+            <header><h4>Lorem Ipsum</h4></header>
+          </div>
+        </div>
+        </div>
+        <div class="buttons">
+        <span id="prev" class="btn prev">
+          <i class="fas fa-angle-left"></i>
+          <i class="fas fa-angle-left"></i>
+        </span>
+        <span id="next" class="btn next">
+          <i class="fas fa-angle-right">XXXx</i>
+          <i class="fas fa-angle-right">YYY</i>
+        </span>
+        </div>
+    </section>
+    <script>
+      const container = document.querySelector('.container2');
+const next = document.querySelector('.next');
+const prev = document.querySelector('.prev');
+const size = (container.clientWidth / 2);
+let counter = 0;
+
+function nextElement() {
+  if (counter < 7) {
+    container.style.transition = '.5s ease-in-out';
+    counter++;
+    container.style.transform = 'translateX('+ (-size  * counter) +'px)';
+  }
+}
+
+function prevElement() {
+  if (counter > 0) {
+    container.style.transition = '.5s ease-in-out';
+    counter--;
+    container.style.transform = 'translateX('+ (-size  * counter) +'px)';
+  }
+}
+
+next.addEventListener('click', nextElement, false);
+prev.addEventListener('click', prevElement, false);
+
+next.addEventListener('mouseover', () => {
+  document.querySelectorAll('.btn:nth-child(2) i').forEach((e) => {
+    e.style.transition = '200ms all';
+    e.style.transitionTimingFunction = 'cubic-bezier(0,.25,0,1);';
+    e.style.transform = 'translate(18px, 0)';
+  });
+}, false);
+
+next.addEventListener('mouseout', () => {
+  document.querySelectorAll('.btn:nth-child(2) i').forEach((e) => {
+    e.style.transition = 'none';
+    e.style.transitionTimingFunction = 'none';
+    e.style.transform = 'translate(-18px, 0)';
+  });
+}, false);
+
+prev.addEventListener('mouseover', () => {
+  document.querySelectorAll('.btn:nth-child(1) i').forEach((e) => {
+    e.style.transition = '200ms all';
+    e.style.transitionTimingFunction = 'cubic-bezier(0,.25,0,1);';
+    e.style.transform = 'translate(-18px, 0)';
+  });
+}, false);
+
+prev.addEventListener('mouseout', () => {
+  document.querySelectorAll('.btn:nth-child(1) i').forEach((e) => {
+    e.style.transition = 'none';
+    e.style.transitionTimingFunction = 'none';
+    e.style.transform = 'translate(18px, 0)';
+  });
+}, false);
+
+    </script>
+    {% else %}
+       <div class="featurdde-lide">ojodjddpcjs</div>
+    {% endif %}
+ 

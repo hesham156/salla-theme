@@ -98,7 +98,7 @@
                         listen-to-thumbnails-option
                         show-thumbs-controls="false">
                     {% if product.promotion_title %}
-                        <div class="promotion-title">{{ product.promotion_title }}</div>
+                        <div class="promotion-title">{{ product.promotion_title }} </div>
                     {% endif %}
 
                     <salla-button
@@ -196,6 +196,7 @@
                 {% endif %}
 
                 <h1 class="text-xl md:text-2xl leading-10 font-bold mb-6 text-gray-800">{{ product.name }}</h1>
+                <script>console.log("ddd",{m:"{{product.options}}"})</script>
 
                 {% if product.subtitle %}
                     <h3 class="product-entry__sub-title text-sm text-gray-400 leading-6 mb-2.5">

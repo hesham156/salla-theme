@@ -1,12 +1,134 @@
-<section class="features s-block s-block--features container">
-    <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-4 sm:gap-6 xl:gap-8">
-    {% if component.features_view %}
-      {% for feature in component.features_lnks %}
-        {{ include('./slider2.html',{icon:feature.feature_icon,title:feature.feature_title,des:feature.feature_des})   }}
-      {% endfor %}
-    {% else %}
-        <div class="feature-lide">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  {% if component.features_view %}  
+  <section class="slider-section" dir="ltr">
+      <div class="container">
+        <div class="middle-slider">
+          <div class="slides">
+            {% for feature in component.features_lnks %}
+            <div class="text-wrapper"><span>{{ loop.index }}</span></div> 
+            {% endfor %}
+          </div>
         </div>
-    {% endif %}  
-    </div>
-</section>
+   
+      </div>
+    </section>
+  {% else %}
+    <div>dfdf</div>
+  {% endif %}
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<style>
+  
+.slider-section {
+  background-color: #3b3939;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  min-height: 90vh;
+}
+.container {
+  margin: auto;
+  padding: 12px;
+  width: 100%;
+  max-width: 90%;
+  text-align: center;
+}
+
+.slides {
+  margin: 32px auto;
+}
+.slider-section .slick-slide {
+  padding: 24px 0px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #b83b5e;
+}
+.slick-slide:not(.slick-current) {
+  opacity: 0.2;
+}
+.slick-current {
+  background-color: chartreuse;
+  color: #b83b5e !important;
+}
+.bottom-slider .slick-slide {
+  margin-block: 0.5rem;
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+.slick-slide {
+  background-color: #c0eee4;
+  color: #6a2c70;
+  margin: 0 12px;
+}
+.slick-dots li button:before {
+  color: #c0eee4;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+.slick-dots li.slick-active button:before,
+.slick-dots li button:hover::before,
+.slick-dots li button:focus::before {
+  color: #f08a5d;
+  opacity: 1;
+}
+.slick-next,
+.slick-prev {
+  width: fit-content;
+  height: auto;
+}
+.slick-next:before,
+.slick-prev:before {
+  font-size: 2.5rem;
+  opacity: 0.5;
+  color: #f08a5d;
+}
+.slick-next {
+  right: -40px;
+}
+.slick-prev {
+  left: -40px;
+}
+@media (max-width: 767px) {
+
+  .slick-next {
+    right: 0px;
+  }
+  .slick-prev {
+    left: 0px;
+  }
+}
+
+</style>
+<script>
+  $(".middle-slider .slides").slick({
+  autoplay: true,
+  autoplaySpeed: 2000,
+  centerPadding: '60px',
+  slidesToShow: 3,
+  slidesToScroll:3,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerPadding: '40px',
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+});
+
+
+</script>

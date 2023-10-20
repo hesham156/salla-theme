@@ -757,7 +757,7 @@
             "fields": [
                 {
                     "id": "slider",
-                    "key": "93ebc3c0-3d69-4ecc-903f-2cf14425d420",
+                    "key": "3a2a1605-0a21-4c80-87e9-74d9772d5a0f",
                     "type": "static",
                     "format": "title",
                     "label": "اعدادات الاسلايد",
@@ -766,8 +766,21 @@
                     "icon": "sicon-format-text"
                 },
                 {
+                    "id": "bannar_slider",
+                    "key": "042cf624-eab3-488b-a3c6-491c549ef788",
+                    "type": "boolean",
+                    "format": "switch",
+                    "label": "Switch",
+                    "description": "اسلايدر",
+                    "labelHTML": null,
+                    "icon": "sicon-toggle-off",
+                    "value": true,
+                    "selected": false,
+                    "required": false
+                },
+                {
                     "id": "img_bg",
-                    "key": "32b5cd1e-88c4-439e-8cad-5585608fcb42",
+                    "key": "ffcb2e3a-ed3b-44b3-80eb-10f295ebf0f1",
                     "type": "string",
                     "format": "image",
                     "label": "صوره الخلفيه",
@@ -780,7 +793,7 @@
                 },
                 {
                     "id": "color_bg",
-                    "key": "5361342e-a33b-4bcc-8fde-93b2a29713db",
+                    "key": "51a1c498-890a-4b06-9e6e-9bcb31f5c3e6",
                     "type": "string",
                     "format": "color",
                     "inputType": "color",
@@ -793,7 +806,7 @@
                 },
                 {
                     "id": "collection",
-                    "key": "6f58aad0-8cc3-4c1b-9607-9a27736fa88b",
+                    "key": "22c9437f-d44a-4bdb-a240-b559a2c5a43c",
                     "type": "collection",
                     "format": "collection",
                     "label": "Collection",
@@ -804,7 +817,7 @@
                     "fields": [
                         {
                             "id": "first_img",
-                            "key": "69c59de1-911e-4335-b365-621675c14aeb",
+                            "key": "cbcda6cf-8ceb-4e7e-ab2f-d49e7eab630b",
                             "type": "string",
                             "format": "image",
                             "label": "الصوره الاولي في البنر",
@@ -817,7 +830,7 @@
                         },
                         {
                             "id": "second_img",
-                            "key": "c09cda61-fd4d-4145-9920-7905d67c9a40",
+                            "key": "7bc4227c-35c3-4df3-8ebe-b0c2c1bfcc01",
                             "type": "string",
                             "format": "image",
                             "label": "الصوره الثانيه في البنر",
@@ -830,7 +843,7 @@
                         },
                         {
                             "id": "bannar_title",
-                            "key": "9e0a5f97-c02e-46ef-8756-26be509a2921",
+                            "key": "281a3e01-bd8d-4615-83a9-73a557adeeef",
                             "type": "string",
                             "format": "textarea",
                             "label": "العنوان",
@@ -846,7 +859,7 @@
                         },
                         {
                             "id": "bannar_des",
-                            "key": "6702eef4-e6e3-42f4-bdb9-035ed2c8372d",
+                            "key": "6f9135e3-8a12-4710-bcc8-815365d18510",
                             "type": "string",
                             "format": "richtext",
                             "label": "الوصف",
@@ -862,7 +875,7 @@
                         },
                         {
                             "id": "btn_text",
-                            "key": "78f7cc0b-caeb-4b5f-b23a-d3bf1cc6d2c7",
+                            "key": "7549df98-4b71-421b-bc43-57eccbecbbb8",
                             "type": "string",
                             "format": "textarea",
                             "label": "نص الزر",
@@ -878,7 +891,7 @@
                         },
                         {
                             "id": "btn_lnk",
-                            "key": "703f392a-63d6-481c-9f3d-04b869239b42",
+                            "key": "d7eb2dde-1b6b-4130-a241-86d822c93e7d",
                             "type": "string",
                             "format": "url",
                             "inputType": "url",

@@ -1,8 +1,30 @@
+
 {% if component.bannar_slider %}
 <section class="s-block home-slider s-block--hero-slider s-block--full-bg wide-placeholder">
 	<salla-slider id="main-slider-{{ position }}" class="home-slider main-slider" auto-play loop type="fullwidth">
 		<div slot="items">
 			{% for slide in component.collection %}
+			<script>
+   const svg = escape(`<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="142.0329 136.3475 254.2484 65.4277" width="254.248" height="65.428" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="filter0_d_1_3549" x="0.611816" y="0.794922" width="485.308" height="306.705" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="42"/>
+      <feGaussianBlur stdDeviation="60"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0.816667 0 0 0 0 0.816667 0 0 0 0.15 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_3549"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_3549" result="shape"/>
+    </filter>
+  </defs>
+  <g filter="url(#filter0_d_1_3549)" transform="matrix(1.0364439487457275, 0, 0, 0.9808540344238281, 17.025656000162, 59.060910151316364)" style="">
+    <path d="M365.908 91.3285C366.224 84.2067 360.299 78.381 353.183 78.8183L131.89 92.4162C123.106 92.9559 117.872 102.453 122.106 110.168L138.083 139.274C140.19 143.114 144.222 145.5 148.602 145.5H352.021C358.442 145.5 363.725 140.447 364.01 134.033L365.908 91.3285Z" fill="{{ component.btn_bg }}"/>
+  </g>
+</svg>`)
+document.querySelector('lnk-{{ slide | index }}').style=`background-image:'data:image/svg+xml;charset=utf-8,'+${svg}`
+</script>
 				<div class="swiper-lazy-wrap w-full min-h-[300px] lg:min-h-[528px] " style="background-color: {{component.color_bg}};">
 					<div data-background="{{ component.img_bg }}" class="swiper-lazy"></div>
 					<div class="flex-center container pb-16 sm:pb-0 home-slider__content relative h-full">
@@ -13,7 +35,7 @@
 							<div class="middel-text ">
 								<h3>{{ slide.bannar_title }}</h3>
 								<p>{{ slide.bannar_des }}</p>
-								<a class="slide-lnk" href="{{slide.btn_lnk}}">
+								<a class="slide-lnk lnk-{{ slide | index }}" href="{{slide.btn_lnk}}" style="color:{{ omponent.btn_color }}">
 										{{slide.btn_text}}
 								</a>
 							</div>

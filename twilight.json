@@ -1046,6 +1046,13 @@
                     "maxLength": "10"
                 }
             ]
+        },
+        {
+            "key": "f1dcc902-ddb0-4af4-b58c-0097d17a500f",
+            "title": "الاقسام",
+            "icon": "sicon-store",
+            "path": ".home.category",
+            "fields": []
         }
     ],
     "support_url": "https://example.com",

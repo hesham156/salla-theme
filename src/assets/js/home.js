@@ -3,14 +3,16 @@ import BasePage from "./base-page";
 import Lightbox from "fslightbox";
 window.fslightbox = Lightbox;
 
+
 class Home extends BasePage {
+    
     onReady() {
         this.initFeaturedTabs();
     }
-
-    /**
-     * used in views/components/home/featured-products-style*.twig
-     */
+  
+    // /**
+    //  * used in views/components/home/featured-products-style*.twig
+    //  */
     initFeaturedTabs() {
         app.all('.tab-trigger', el => {
             el.addEventListener('click', ({ currentTarget: btn }) => {

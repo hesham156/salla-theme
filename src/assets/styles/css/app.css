@@ -68,6 +68,22 @@ a.slide-lnk {
 p.s-cart-summary-content {
   display: none;
 }
+header.store-header,section.slider-section,section.s-block.container {
+  position: relative;
+  z-index: 1111111111111111111111;
+}
+.s-product-card-content-footer{
+  position: absolute;
+    width: 80%;
+    margin: auto;
+    top: -40px;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+salla-product-card:hover .s-product-card-content-footer{
+  top: -100px;
+  opacity: 1;
+}
 @-webkit-keyframes slide-fwd-center {
   0% {
     -webkit-transform: translateZ(0);

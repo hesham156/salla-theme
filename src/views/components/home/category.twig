@@ -1,0 +1,98 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+	<section class="slider-section" dir="ltr">
+		<div class="container">
+			<div class="middle-slider">
+				<div class="slideer" >
+					{% for cate in component.links %}
+						<div class="s-block--features__item" >
+							<div class="feature-icon">
+                            <img src="{{ cate.image }}"/>
+							</div>
+							
+						</div>
+					{% endfor %}
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<style>
+
+	.feature-icon {
+		margin: auto;
+	}
+
+
+	.slideer {
+		margin: 32px auto;
+	}
+	.slider-section .slick-slide {
+		padding: 24px 0;
+		border-radius: 10px;
+		text-align: center;
+		font-size: 2rem;
+		font-weight: 600;
+		color: #b83b5e;
+	}
+
+	.bottom-slider .slick-slide {
+		margin-block: 0.5rem;
+		font-size: 1.75rem;
+		font-weight: 500;
+	}
+	.slick-slide {
+		margin: 0 12px;
+	}
+	.slick-dots li button:before {
+		transition: all 0.3s ease;
+	}
+	.slick-dots li.slick-active button:before,
+	.slick-dots li button:hover::before,
+	.slick-dots li button:focus::before {
+		color: #f08a5d;
+		opacity: 1;
+	}
+	.slick-next,
+	.slick-prev {
+		width: fit-content;
+		height: auto;
+	}
+	.slick-next:before,
+	.slick-prev:before {
+		font-size: 2.5rem;
+		opacity: 0.5;
+		color: #f08a5d;
+	}
+	.slick-next {
+		right: -40px;
+	}
+	.slick-prev {
+		left: -40px;
+	}
+	@media(max-width: 767px) {
+
+		.slick-next {
+			right: 0;
+		}
+		.slick-prev {
+			left: 0;
+		}
+	}
+</style>
+<script>
+	$(".middle-slider .slideer").slick({
+  dots: false,
+  arrows: false,
+  loop: true,
+  autoplaySpeed: 3000,
+  slidesToShow: '{{component.links|length}}'-1,
+  slidesToScroll: 1,
+  autoplay:true,
+
+
+});
+</script>

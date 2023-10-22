@@ -2002,9 +2002,6 @@ select{
 .font-semibold{
   font-weight: 600;
 }
-.uppercase{
-  text-transform: uppercase;
-}
 .leading-10{
   line-height: 2.5rem;
 }
@@ -2317,12 +2314,6 @@ select{
   --tw-text-opacity: 1;
   color: rgba(17, 24, 39, 1);
   color: rgba(17, 24, 39, var(--tw-text-opacity));
-}
-.spinner-loader.reverse{
-  border-right-color: #9f7171 !important;
-}
-.spinner-loader.reverse{
-  background-color: #f98181;
 }
 .has-error .s-form-label{
   color: #ff443a;

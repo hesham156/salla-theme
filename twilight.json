@@ -1060,7 +1060,7 @@
                     "required": true,
                     "minLength": 3,
                     "maxLength": 100,
-                    "item_label": "رابط ",
+                    "item_label": "رابط",
                     "value": [
                         {
                             "links.icon": "sicon-store2",
@@ -1077,27 +1077,18 @@
                     ],
                     "fields": [
                         {
+                            "id": "image",
+                            "key": "470c5f02-e411-4247-8de3-1c8f1a645393",
                             "type": "string",
-                            "icon": "sicon-format-text-alt",
-                            "label": "عنوان الرابط",
-                            "id": "links.icon",
-                            "value": "sicon-store2",
-                            "required": true,
-                            "format": "icon",
-                            "description": null
-                        },
-                        {
-                            "type": "string",
-                            "icon": "sicon-format-text-alt",
-                            "multilanguage": true,
-                            "id": "links.title",
+                            "format": "image",
+                            "label": "Image",
+                            "description": "صوره القسم",
+                            "labelHTML": null,
+                            "placeholder": "e.g. https://hostname.com/image.png",
+                            "icon": "sicon-image",
                             "value": null,
-                            "required": true,
-                            "format": "text",
-                            "description": null,
-                            "placeholder": "أدخل عنوان للرابط هنا...",
-                            "minLength": 2,
-                            "maxLength": 80
+                            "required": false,
+                            "defaulted": true
                         },
                         {
                             "type": "items",
@@ -1161,9 +1152,11 @@
                                     "key": "custom",
                                     "value": "custom"
                                 }
-                            ]
+                            ],
+                            "key": "5af4836d-f37b-483e-9f4c-2d9d7023d891"
                         }
-                    ]
+                    ],
+                    "key": "ddb2b936-6074-4729-a6d0-4085a1f15a96"
                 }
             ]
         }

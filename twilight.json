@@ -944,7 +944,7 @@
             "key": "0394fe5b-629a-45e4-9deb-6c3080935575",
             "title": "المميزات",
             "icon": "sicon-store",
-            "path": ".home.features",
+            "path": "home.features",
             "fields": [
                 {
                     "type": "boolean",
@@ -1176,7 +1176,12 @@
                     "key": "bdb370c4-6933-4da2-b881-dd890e66041a"
                 }
             ]
-        }
+        },
+        { "key": "0394fe5b-629a-45e4-9deb-6c3080935575",
+        "title": "المميزات",
+        "icon": "sicon-store",
+        "path": "home.tw",
+        "fields": []}
     ],
     "support_url": "https://example.com",
     "description": {

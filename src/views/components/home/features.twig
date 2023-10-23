@@ -1,3 +1,4 @@
+
 {% if component.features_view %}
 	<section class="slider-section" dir="ltr">
 		<div class="container">
@@ -33,8 +34,7 @@
 		</div>
 	</section>
 {% endif %}
-<h1>haies</h1>
-{% component "views.components.home.html.slider" %}
+
 <script>
 	$(".middle-slider .slides").slick({
   dots: false,
@@ -48,3 +48,5 @@
 
 });
 </script>
+{% include 'components.home.tw' %}
+ 

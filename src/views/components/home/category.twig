@@ -6,9 +6,11 @@
 				<div class="slideer" >
 					{% for cate in component.links %}
 						<div class="s-block--features__item" >
+							<a href="{{ cate.url }}">
 							<div class="feature-icon">
                             <img src="{{ cate.image }}"/>
 							</div>
+							</a>
 							
 						</div>
 					{% endfor %}
@@ -86,7 +88,7 @@
 <script>
 	$(".middle-slider .slideer").slick({
   dots: false,
-  arrows: false,
+  arrows: true,
   loop: true,
   autoplaySpeed: 3000,
   slidesToShow: '{{component.links|length}}'-1,

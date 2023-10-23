@@ -1078,7 +1078,7 @@
                     "fields": [
                         {
                             "id": "image",
-                            "key": "470c5f02-e411-4247-8de3-1c8f1a645393",
+                            "key": "9a8b8ec6-adc6-473b-9a78-be6ecb9dbc1c",
                             "type": "string",
                             "format": "image",
                             "label": "Image",
@@ -1088,6 +1088,23 @@
                             "icon": "sicon-image",
                             "value": null,
                             "required": false,
+                            "defaulted": true
+                        },
+                        {
+                            "id": "string",
+                            "key": "a734c608-1fe8-471f-b3b0-70931d6d95f4",
+                            "type": "string",
+                            "format": "text",
+                            "label": "String",
+                            "description": "اسم القسم",
+                            "labelHTML": null,
+                            "placeholder": "Placeholder text ..",
+                            "icon": "sicon-format-text-alt",
+                            "value": null,
+                            "multilanguage": false,
+                            "required": false,
+                            "minLength": "1",
+                            "maxLength": 30,
                             "defaulted": true
                         },
                         {
@@ -1153,10 +1170,10 @@
                                     "value": "custom"
                                 }
                             ],
-                            "key": "5af4836d-f37b-483e-9f4c-2d9d7023d891"
+                            "key": "2643a565-e536-4acb-920e-7a25ec31ebcc"
                         }
                     ],
-                    "key": "ddb2b936-6074-4729-a6d0-4085a1f15a96"
+                    "key": "bdb370c4-6933-4da2-b881-dd890e66041a"
                 }
             ]
         }

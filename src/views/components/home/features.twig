@@ -1,28 +1,25 @@
-
 {% if component.features_view %}
-	<section class="slider-section" dir="ltr">
-		<div class="container">
-			<div class="middle-slider">
-				<div class="slides" >
-					{% for feature in component.features_lnks %}
-						<div class="s-block--features__item" >
-							<div class="feature-icon">
-								<i class="{{feature.feature_icon}}"></i>
-							</div>
-							<h4>{{feature.feature_title}}</h4>
-							<p>{{feature.feature_des}}</p>
-						</div>
-					{% endfor %}
-				</div>
-			</div>
+	<section class="feature-slider">
+		<salla-slider id="thumbs" loop="true" auto-play="true" show-controls="false" type="carousel">
 
-		</div>
+			<div slot="items">
+				{% for feature in component.features_lnks %}
+					<div class="w-30 s-block--features__item">
+						<div class="feature-icon">
+							<i class="{{feature.feature_icon}}"></i>
+						</div>
+						<h4 class="text-center ">{{feature.feature_title}}</h4>
+						<p>{{feature.feature_des}}</p>
+					</div>
+				{% endfor %}
+			</div>
+		</salla-slider>
 	</section>
 {% else %}
 	<section class="s-block s-block--features container">
 		<div class="grid lg:grid-cols-4 md:grid-cols-2 gap-4 sm:gap-6 xl:gap-8">
 			{% for feature in component.features_lnks %}
-				<div class="s-block--features__item" >
+				<div class="s-block--features__item">
 					<div class="feature-icon">
 						<i class="{{feature.feature_icon}}"></i>
 					</div>
@@ -36,7 +33,7 @@
 {% endif %}
 {% include 'components.home.tw' with {alt:"fff"} %}
 
-<script>
+ <script>
 	$(".middle-slider .slides").slick({
   dots: false,
   arrows: false,
@@ -49,4 +46,3 @@
 
 });
 </script>
- 

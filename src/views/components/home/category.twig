@@ -20,7 +20,27 @@
 
 		</div>
 	</section>
-
+<section class="category-slider">
+   <div class="container">
+		<salla-slider id="thumbs" loop="true" auto-play="true" show-controls="true" controls-outer="true" type="carousel">
+			<div slot="items">
+			{% for cate in component.links %}
+						<div class="s-block--features__item" >
+							<a href="{{ cate.url }}">
+							<div class="feature-icon">
+                            <img src="{{ cate.image }}"/>
+							</div>
+							<div>
+							   <h2 class="text-center">{{ cate.string }}</h2>
+							</div>
+							</a>
+							
+						</div>
+					{% endfor %}
+			</div>
+		</salla-slider>
+		</div>
+</section>
 <style>
 
 	.feature-icon {

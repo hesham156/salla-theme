@@ -266,6 +266,9 @@ salla-add-product-button.hydrated button{
 .slick-prev {
   left: -40px;
 }
+.feature-slider .swiper-slide,.category-slider .swiper-slide{
+  width: 25% !important;
+}
 @media(max-width: 767px) {
 
   .slick-next {

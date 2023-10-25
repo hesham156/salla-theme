@@ -2,7 +2,7 @@
 .top-navbar > div > div:last-child {
   flex: unset;
 }
-.app-inner.hdhhdhd.flex.flex-col.min-h-full{
+.app-inner.hdhhdhd.flex.flex-col.min-h-full {
   background-color: white;
 }
 .new-slide {
@@ -53,14 +53,14 @@
 }
 a.slide-lnk {
   background-image: url(../../images/btn.svg);
-    background-size: 100% 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 180px;
-    display: block;
-    padding: 10px;
-    padding-bottom: 20px;
-    font-size: 20px;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 180px;
+  display: block;
+  padding: 10px;
+  padding-bottom: 20px;
+  font-size: 20px;
 }
 a.slide-lnk:hover {
   animation: shake 0.4s linear 1;
@@ -80,26 +80,31 @@ a.slide-lnk:hover {
 p.s-cart-summary-content {
   display: none;
 }
-header.store-header,section.slider-section,section.s-block.container {
+header.store-header,
+section.slider-section,
+section.s-block.container {
   position: relative;
 }
-.s-product-card-content-footer{
+.s-product-card-content-footer {
   position: absolute;
-    width: 80%;
-    margin: auto;
-    top: -40px;
-    opacity: 0;
-    transition: all 0.3s ease-in-out;
+  width: 80%;
+  margin: auto;
+  top: -40px;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
 }
-.s-slider-block__title-nav>button {
+.s-slider-block__title-nav > button {
   border: 0;
 }
-salla-product-card:hover .s-product-card-content-footer{
+salla-product-card:hover .s-product-card-content-footer {
   top: -100px;
   opacity: 1;
 }
-[dir=rtl] .slick-next:before,[dir=rtl] .slick-prev:before,button.s-slider-prev.s-slider-nav-arrow,button.s-slider-next.s-slider-nav-arrow {
-  content: '';
+[dir="rtl"] .slick-next:before,
+[dir="rtl"] .slick-prev:before,
+button.s-slider-prev.s-slider-nav-arrow,
+button.s-slider-next.s-slider-nav-arrow {
+  content: "";
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='289.9316 127.5167 40.0004 37.2042'%3E%3Cpath d='M 324.816 147.237 C 322.361 141.952 329.932 139.274 329.932 134.086 C 329.932 128.898 319.329 124.78 311.005 129.778 C 300.775 135.92 305.378 133.082 293.613 137.328 C 284.201 140.726 295.148 151.019 300.775 153.902 C 308.959 158.096 314.995 157.96 320.724 160.98 C 326.453 163.999 327.544 158.778 327.374 155.79 C 327.374 153.902 327.272 152.521 324.816 147.237 Z' fill='%23E9B824'/%3E%3Cpath d='M 324.816 150.069 C 322.361 144.784 329.932 142.106 329.932 136.918 C 329.932 131.73 319.329 127.612 311.005 132.61 C 300.775 138.752 305.378 135.914 293.613 140.16 C 284.201 143.558 295.148 153.851 300.775 156.734 C 308.959 160.928 314.995 160.792 320.724 163.812 C 326.453 166.831 327.544 161.61 327.374 158.622 C 327.374 156.734 327.272 155.353 324.816 150.069 Z' stroke='%23EB9122' stroke-width='0.5' style='&%2310; fill: %23665f4a00;&%2310;'/%3E%3Cpath d='M 311.994 149.21 L 307.647 145.16 C 307.134 144.682 307.134 143.899 307.647 143.42 L 311.994 139.37' stroke='%23473603' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round' style='&%2310; fill: %23e9b824;&%2310;'/%3E%3C/svg%3E");
   background-size: contain;
   background-position: center;
@@ -110,20 +115,21 @@ salla-product-card:hover .s-product-card-content-footer{
   background-color: transparent !important;
   box-shadow: none !important;
 }
-[dir=rtl] .slick-prev:before,button.s-slider-prev.s-slider-nav-arrow{
+[dir="rtl"] .slick-prev:before,
+button.s-slider-prev.s-slider-nav-arrow {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='318.921 149.7714 39.0985 39.4979'%3E%3Cpath d='M 323.921 170.708 C 326.321 165.098 318.921 162.255 318.921 156.746 C 318.921 151.238 329.285 146.866 337.421 152.172 C 347.421 158.693 342.921 155.68 354.421 160.189 C 363.621 163.796 352.921 174.724 347.421 177.785 C 339.421 182.238 333.521 182.093 327.921 185.299 C 322.321 188.505 321.254 182.962 321.421 179.789 C 321.421 177.785 321.521 176.319 323.921 170.708 Z' fill='%23E9B824'/%3E%3Cpath d='M 323.921 173.713 C 326.321 168.103 318.921 165.26 318.921 159.751 C 318.921 154.243 329.285 149.871 337.421 155.177 C 347.421 161.698 342.921 158.685 354.421 163.194 C 363.621 166.8 352.921 177.729 347.421 180.79 C 339.421 185.243 333.521 185.098 327.921 188.304 C 322.321 191.51 321.254 185.967 321.421 182.794 C 321.421 180.79 321.521 179.324 323.921 173.713 Z' stroke='%23EB9122' stroke-width='0.5' style='&%2310; fill: transparent;&%2310;'/%3E%3Cpath d='M 335.959 173.095 L 340.306 168.74 C 340.819 168.226 340.819 167.384 340.306 166.87 L 335.959 162.515' stroke='%23473603' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round' style='&%2310; fill: %23e9b824;&%2310;'/%3E%3C/svg%3E");
-
 }
-button.s-slider-prev.s-slider-nav-arrow svg,button.s-slider-next.s-slider-nav-arrow svg{
+button.s-slider-prev.s-slider-nav-arrow svg,
+button.s-slider-next.s-slider-nav-arrow svg {
   display: none;
 }
-[dir=rtl] .slick-prev {
+[dir="rtl"] .slick-prev {
   right: unset !important;
   left: 105px !important;
   z-index: 1111;
   top: 0;
 }
-[dir=rtl] .slick-next {
+[dir="rtl"] .slick-next {
   right: auto;
   left: 40px !important;
   top: 0;
@@ -132,26 +138,25 @@ button.s-slider-prev.s-slider-nav-arrow svg,button.s-slider-next.s-slider-nav-ar
   height: 10rem !important;
   width: 10rem !important;
   background-color: #fff !important;
-  fill: var(--02-dark-color-white, #FFF);
+  fill: var(--02-dark-color-white, #fff);
   filter: drop-shadow(0px 0px 9px rgba(216, 63, 49, 0.19));
 }
-.s-block--features__item:hover{
+.s-block--features__item:hover {
   box-shadow: unset !important;
 }
-salla-add-product-button.hydrated button{ 
+salla-add-product-button.hydrated button {
   background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg viewBox='262.558 140.981 232.305 59.932' width='232.305' height='59.932' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cfilter id='filter0_d_1_3122' x='0.571953' y='0.0769196' width='430.296' height='255.947' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/%3E%3CfeOffset dy='34.9586'/%3E%3CfeGaussianBlur stdDeviation='49.9408'/%3E%3CfeComposite in2='hardAlpha' operator='out'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 1 0 0 0 0 0.816667 0 0 0 0 0.816667 0 0 0 0.15 0'/%3E%3CfeBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow_1_3122'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow_1_3122' result='shape'/%3E%3C/filter%3E%3C/defs%3E%3Cg filter='url(%23filter0_d_1_3122)' transform='matrix(1, 0, 0, 1, 163.8461456298828, 77.57061004638672)'%3E%3Cpath d='M100.464 75.4316C100.211 69.7469 104.752 65 110.442 65H320.991C327.707 65 332.509 71.4946 330.541 77.9154L319.442 114.123C318.156 118.319 314.282 121.183 309.893 121.183H112.051C106.707 121.183 102.31 116.977 102.073 111.639L100.464 75.4316Z' fill='%23E9B824'/%3E%3C/g%3E%3Cpath d='M 313.036 177.141 C 312.071 177.141 311.311 176.997 310.756 176.709 C 310.201 176.409 309.801 175.954 309.557 175.343 C 309.324 174.722 309.208 173.94 309.208 172.996 C 309.208 172.042 309.324 171.254 309.557 170.632 C 309.801 170.011 310.201 169.55 310.756 169.251 C 311.311 168.951 312.071 168.801 313.036 168.801 L 316.565 168.801 L 316.565 176.376 L 315.017 176.376 L 315.017 169.65 L 315.65 170.2 L 313.036 170.2 C 312.448 170.2 311.988 170.272 311.655 170.416 C 311.322 170.549 311.089 170.821 310.955 171.232 C 310.822 171.631 310.756 172.219 310.756 172.996 C 310.756 173.762 310.822 174.345 310.955 174.744 C 311.089 175.133 311.316 175.399 311.638 175.543 C 311.971 175.688 312.437 175.76 313.036 175.76 L 318.347 175.76 L 318.347 177.141 L 313.036 177.141 Z M 318.347 177.141 L 318.347 175.76 C 318.491 175.76 318.58 175.821 318.613 175.943 C 318.657 176.065 318.68 176.231 318.68 176.442 C 318.68 176.653 318.657 176.825 318.613 176.958 C 318.58 177.08 318.491 177.141 318.347 177.141 Z M 311.305 167.453 L 311.305 165.838 L 312.87 165.838 L 312.87 167.453 L 311.305 167.453 Z M 313.586 167.453 L 313.586 165.838 L 315.15 165.838 L 315.15 167.453 L 313.586 167.453 Z M 321.874 177.141 L 321.874 175.76 L 323.672 175.76 L 323.672 177.141 L 321.874 177.141 Z M 320.325 177.141 L 320.325 165.255 L 321.874 165.255 L 321.874 177.141 L 320.325 177.141 Z M 318.344 177.141 L 318.344 175.76 L 320.325 175.76 L 320.325 177.141 L 318.344 177.141 Z M 318.344 177.141 C 318.2 177.141 318.111 177.08 318.078 176.958 C 318.034 176.825 318.012 176.653 318.012 176.442 C 318.012 176.231 318.034 176.065 318.078 175.943 C 318.111 175.821 318.2 175.76 318.344 175.76 L 318.344 177.141 Z M 323.672 177.141 L 323.672 175.76 C 323.805 175.76 323.893 175.821 323.938 175.943 C 323.982 176.065 324.004 176.231 324.004 176.442 C 324.004 176.653 323.982 176.825 323.938 176.958 C 323.893 177.08 323.805 177.141 323.672 177.141 Z M 336.595 177.141 L 336.595 175.76 L 338.376 175.76 L 338.376 177.141 L 336.595 177.141 Z M 332.716 177.141 C 332.316 177.141 331.923 177.069 331.534 176.925 C 331.157 176.77 330.796 176.531 330.452 176.209 L 331.434 175.177 C 331.678 175.377 331.9 175.527 332.1 175.626 C 332.3 175.715 332.505 175.76 332.716 175.76 L 335.729 175.76 L 335.047 176.426 L 335.047 172.53 C 335.047 172.33 335.024 172.053 334.98 171.698 C 334.947 171.332 334.891 170.921 334.814 170.466 C 334.747 170 334.664 169.528 334.564 169.051 L 336.079 168.801 C 336.156 169.201 336.234 169.639 336.312 170.116 C 336.389 170.594 336.456 171.049 336.512 171.481 C 336.567 171.914 336.595 172.264 336.595 172.53 L 336.595 177.141 L 332.716 177.141 Z M 323.677 177.141 L 323.677 175.76 L 326.107 175.76 L 325.724 176.143 L 325.724 170.483 L 327.272 170.483 L 327.272 177.141 L 323.677 177.141 Z M 327.272 177.141 L 327.272 175.76 L 329.004 175.76 C 329.381 175.76 329.664 175.704 329.853 175.593 C 330.041 175.482 330.175 175.26 330.252 174.927 C 330.33 174.594 330.369 174.106 330.369 173.462 L 330.369 169.65 L 331.934 169.65 L 331.934 173.462 C 331.934 174.361 331.828 175.083 331.617 175.626 C 331.418 176.17 331.107 176.559 330.685 176.792 C 330.263 177.025 329.703 177.141 329.004 177.141 L 327.272 177.141 Z M 323.677 177.141 C 323.532 177.141 323.444 177.08 323.41 176.958 C 323.366 176.825 323.344 176.653 323.344 176.442 C 323.344 176.231 323.366 176.065 323.41 175.943 C 323.444 175.821 323.532 175.76 323.677 175.76 L 323.677 177.141 Z M 338.376 177.141 L 338.376 175.76 C 338.52 175.76 338.609 175.821 338.642 175.943 C 338.687 176.065 338.709 176.231 338.709 176.442 C 338.709 176.653 338.687 176.825 338.642 176.958 C 338.609 177.08 338.52 177.141 338.376 177.141 Z M 340.354 177.141 L 340.354 165.255 L 341.902 165.255 L 341.902 177.141 L 340.354 177.141 Z M 338.373 177.141 L 338.373 175.76 L 340.354 175.76 L 340.354 177.141 L 338.373 177.141 Z M 338.373 177.141 C 338.229 177.141 338.14 177.08 338.106 176.958 C 338.062 176.825 338.04 176.653 338.04 176.442 C 338.04 176.231 338.062 176.065 338.106 175.943 C 338.14 175.821 338.229 175.76 338.373 175.76 L 338.373 177.141 Z M 344.717 177.141 L 344.717 165.255 L 346.265 165.255 L 346.265 177.141 L 344.717 177.141 Z M 366.075 177.141 L 366.075 165.255 L 367.623 165.255 L 367.623 177.141 L 366.075 177.141 Z M 364.094 177.141 L 364.094 175.76 L 366.075 175.76 L 366.075 177.141 L 364.094 177.141 Z M 364.094 177.141 C 363.95 177.141 363.856 177.08 363.811 176.958 C 363.778 176.825 363.761 176.653 363.761 176.442 C 363.761 176.231 363.778 176.065 363.811 175.943 C 363.856 175.821 363.95 175.76 364.094 175.76 L 364.094 177.141 Z M 356.853 181.269 C 356.187 181.269 355.565 181.175 354.988 180.986 C 354.422 180.798 353.923 180.531 353.49 180.187 C 353.068 179.854 352.735 179.455 352.491 178.989 C 352.258 178.523 352.142 178.018 352.142 177.474 C 352.142 177.252 352.158 176.964 352.192 176.609 C 352.236 176.242 352.286 175.837 352.341 175.393 C 352.408 174.938 352.48 174.472 352.558 173.995 L 354.089 174.195 C 353.967 174.927 353.867 175.593 353.79 176.192 C 353.723 176.781 353.69 177.197 353.69 177.441 C 353.69 177.918 353.823 178.34 354.089 178.706 C 354.356 179.072 354.728 179.361 355.205 179.571 C 355.682 179.782 356.231 179.888 356.853 179.888 L 361.564 179.888 C 362.374 179.888 362.984 179.666 363.395 179.222 C 363.817 178.789 364.028 178.151 364.028 177.308 L 364.028 176.725 L 365.576 176.725 L 365.576 177.308 C 365.576 178.085 365.415 178.767 365.093 179.355 C 364.782 179.954 364.327 180.42 363.728 180.753 C 363.14 181.097 362.418 181.269 361.564 181.269 L 356.853 181.269 Z M 363.129 177.141 C 362.718 177.141 362.307 177.097 361.897 177.008 C 361.486 176.919 361.087 176.747 360.698 176.492 L 361.581 175.343 C 361.736 175.443 361.886 175.527 362.03 175.593 C 362.174 175.66 362.335 175.704 362.513 175.726 C 362.69 175.749 362.896 175.76 363.129 175.76 L 366.425 175.76 L 366.425 177.141 L 363.129 177.141 Z M 366.425 177.141 L 366.425 175.76 C 366.558 175.76 366.647 175.821 366.691 175.943 C 366.736 176.065 366.758 176.231 366.758 176.442 C 366.758 176.653 366.736 176.825 366.691 176.958 C 366.647 177.08 366.558 177.141 366.425 177.141 Z M 370.435 177.141 L 370.435 165.255 L 371.984 165.255 L 371.984 177.141 L 370.435 177.141 Z M 393.075 177.141 L 393.075 175.76 L 394.856 175.76 L 394.856 177.141 L 393.075 177.141 Z M 383.187 177.141 C 381.5 177.141 380.229 176.836 379.375 176.226 C 378.52 175.615 378.093 174.683 378.093 173.429 C 378.093 173.163 378.11 172.88 378.143 172.58 C 378.187 172.269 378.232 171.97 378.276 171.681 C 378.332 171.393 378.382 171.143 378.426 170.932 C 378.47 170.721 378.504 170.571 378.526 170.483 L 380.041 170.766 C 380.007 170.943 379.957 171.182 379.891 171.481 C 379.835 171.781 379.78 172.103 379.724 172.447 C 379.669 172.791 379.641 173.118 379.641 173.429 C 379.641 173.984 379.758 174.433 379.991 174.777 C 380.235 175.122 380.618 175.371 381.139 175.527 C 381.661 175.682 382.355 175.76 383.22 175.76 L 392.326 175.76 L 391.51 176.459 L 391.51 169.65 L 392.16 170.2 L 389.529 170.2 C 388.93 170.2 388.464 170.272 388.131 170.416 C 387.809 170.56 387.582 170.832 387.449 171.232 C 387.326 171.631 387.265 172.214 387.265 172.98 C 387.265 173.745 387.326 174.328 387.449 174.728 C 387.582 175.127 387.809 175.399 388.131 175.543 C 388.464 175.688 388.93 175.76 389.529 175.76 L 389.529 176.842 C 388.575 176.842 387.815 176.72 387.249 176.475 C 386.694 176.231 386.294 175.826 386.05 175.26 C 385.817 174.694 385.701 173.934 385.701 172.98 C 385.701 172.036 385.817 171.259 386.05 170.649 C 386.294 170.028 386.694 169.567 387.249 169.267 C 387.815 168.957 388.575 168.801 389.529 168.801 L 393.075 168.801 L 393.075 177.141 L 383.187 177.141 Z M 394.856 177.141 L 394.856 175.76 C 394.99 175.76 395.078 175.821 395.123 175.943 C 395.167 176.065 395.189 176.231 395.189 176.442 C 395.189 176.653 395.167 176.825 395.123 176.958 C 395.078 177.08 394.99 177.141 394.856 177.141 Z M 388.997 167.303 L 388.997 165.688 L 390.562 165.688 L 390.562 167.303 L 388.997 167.303 Z M 394.849 177.141 L 394.849 175.76 L 407.234 175.76 L 405.836 176.992 L 405.836 173.179 C 405.836 172.502 405.742 171.948 405.553 171.515 C 405.375 171.071 405.103 170.743 404.737 170.533 C 404.371 170.311 403.916 170.2 403.372 170.2 C 402.895 170.2 402.445 170.283 402.024 170.449 C 401.602 170.616 401.214 170.838 400.858 171.115 C 400.503 171.382 400.17 171.676 399.86 171.997 C 399.549 172.319 399.266 172.641 399.011 172.963 C 398.766 173.285 398.545 173.573 398.345 173.829 L 397.895 172.53 C 398.217 172.142 398.528 171.764 398.828 171.398 C 399.127 171.021 399.432 170.677 399.743 170.366 C 400.065 170.055 400.403 169.783 400.759 169.55 C 401.125 169.317 401.524 169.134 401.957 169.001 C 402.401 168.868 402.9 168.801 403.455 168.801 C 404.232 168.801 404.876 168.934 405.386 169.201 C 405.897 169.467 406.296 169.817 406.585 170.25 C 406.885 170.682 407.096 171.16 407.218 171.681 C 407.34 172.192 407.401 172.691 407.401 173.179 L 407.401 177.141 L 394.849 177.141 Z M 397.146 175.76 L 397.146 168.801 L 398.694 168.801 L 398.694 175.76 L 397.146 175.76 Z M 394.849 177.141 C 394.705 177.141 394.616 177.08 394.583 176.958 C 394.538 176.825 394.516 176.653 394.516 176.442 C 394.516 176.231 394.538 176.065 394.583 175.943 C 394.616 175.821 394.705 175.76 394.849 175.76 L 394.849 177.141 Z M 401.674 167.32 L 401.674 165.705 L 403.239 165.705 L 403.239 167.32 L 401.674 167.32 Z M 410.183 177.141 L 410.183 165.255 L 411.731 165.255 L 411.731 177.141 L 410.183 177.141 Z' fill='%235C4500'/%3E%3Cpath d='M 430.671 167.533 L 430.671 166.725 C 430.671 164.85 432.179 163.008 434.054 162.833 C 436.288 162.617 438.171 164.375 438.171 166.567 L 438.171 167.717' stroke='%235C4500' stroke-width='1.7' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M 431.922 179.476 L 436.922 179.476 C 440.272 179.476 440.872 178.134 441.047 176.501 L 441.672 171.501 C 441.897 169.468 441.314 167.809 437.756 167.809 L 431.089 167.809 C 427.531 167.809 426.947 169.468 427.172 171.501 L 427.797 176.501 C 427.972 178.134 428.572 179.476 431.922 179.476 Z' stroke='%235C4500' stroke-width='1.7' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M 437.333 171.14 L 437.341 171.14' stroke='%235C4500' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M 431.501 171.141 L 431.509 171.141' stroke='%235C4500' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    font-size: 0;
-    background-color: transparent !important;
-    height: 45px !important;
-    border: 0 !important;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 0;
+  background-color: transparent !important;
+  height: 45px !important;
+  border: 0 !important;
 }
 .feature-icon {
   margin: auto;
 }
-
 
 .slides {
   margin: 32px auto;
@@ -199,11 +204,11 @@ salla-add-product-button.hydrated button{
 .slick-prev {
   left: -40px;
 }
-.feature-slider .swiper-slide,.category-slider .swiper-slide{
+.feature-slider .swiper-slide,
+.category-slider .swiper-slide {
   width: 25% !important;
 }
-@media(max-width: 767px) {
-
+@media (max-width: 767px) {
   .slick-next {
     right: 0;
   }
@@ -213,28 +218,30 @@ salla-add-product-button.hydrated button{
   .new-slide.text-white {
     flex-wrap: wrap;
     align-items: normal;
-}
-.middel-text {
-  order: 1;
-  width: 100%;
-}
-.bannar-first-img{
-  width: 50% !important;
-  order: 2;
-}
-.bannar-second-img{
-  width: 50% !important;
-  order: 3;
-}
-.bannar-first-img,.bannar-second-img{
-  height: auto !important;
-}
-.feature-slider .swiper-slide, .category-slider .swiper-slide {
-  width: 102% !important;
-}
-.swiper.s-slider-container.swiper-initialized.swiper-horizontal.swiper-pointer-events.swiper-rtl {
-  padding: 0;
-}
+  }
+  .middel-text {
+    order: 1;
+    width: 100%;
+  }
+  .bannar-first-img {
+    width: 50% !important;
+    order: 2;
+  }
+  .bannar-second-img {
+    width: 50% !important;
+    order: 3;
+  }
+  .bannar-first-img,
+  .bannar-second-img {
+    height: auto !important;
+  }
+  .feature-slider .swiper-slide,
+  .category-slider .swiper-slide {
+    width: 102% !important;
+  }
+  .swiper.s-slider-container.swiper-initialized.swiper-horizontal.swiper-pointer-events.swiper-rtl {
+    padding: 0;
+  }
 }
 @-webkit-keyframes slide-fwd-center {
   0% {
@@ -283,7 +290,7 @@ salla-add-product-button.hydrated button{
 }
 
 .card a {
-  text-decoration: none
+  text-decoration: none;
 }
 
 .content {
@@ -306,7 +313,7 @@ salla-add-product-button.hydrated button{
 
 .desc {
   margin-top: 0.5rem;
-  color: #6B7280;
+  color: #6b7280;
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
@@ -320,15 +327,31 @@ salla-add-product-button.hydrated button{
   font-weight: 500;
   align-items: center;
   gap: 0.25rem;
-  background-color: #2563EB;
+  background-color: #2563eb;
   padding: 4px 8px;
   border-radius: 4px;
 }
 
 .action span {
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
 
 .action:hover span {
   transform: translateX(4px);
+}
+
+.card.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+}
+.card{
+  width: 33% !important;
+  min-width: 33% !important;
+  
+}
+.imgWtext .swiper.s-slider-container.swiper-initialized.swiper-horizontal.swiper-pointer-events.swiper-rtl.swiper-backface-hidden {
+  padding: 50px 0;
 }

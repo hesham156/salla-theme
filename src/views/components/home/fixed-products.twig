@@ -10,7 +10,7 @@
 {% set is_vertical = theme.settings.get('vertical_fixed_products', true) %}
 <section class="s-block container">
  <script>
-
+  console.log("[{{ products|map((product) => product)|join(',') }}]")
 </script>
     {% if title %}
       <div class="s-block__title">

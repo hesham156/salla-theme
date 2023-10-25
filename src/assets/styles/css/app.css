@@ -82,7 +82,6 @@ p.s-cart-summary-content {
 }
 header.store-header,section.slider-section,section.s-block.container {
   position: relative;
-  z-index: 1111111111111111111111;
 }
 .s-product-card-content-footer{
   position: absolute;
@@ -96,8 +95,8 @@ salla-product-card:hover .s-product-card-content-footer{
   top: -100px;
   opacity: 1;
 }
-[dir=rtl] .slick-next:before,[dir=rtl] .slick-prev:before {
-  content: '←';
+[dir=rtl] .slick-next:before,[dir=rtl] .slick-prev:before,button.s-slider-prev.s-slider-nav-arrow,button.s-slider-next.s-slider-nav-arrow {
+  content: '';
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='289.9316 127.5167 40.0004 37.2042'%3E%3Cpath d='M 324.816 147.237 C 322.361 141.952 329.932 139.274 329.932 134.086 C 329.932 128.898 319.329 124.78 311.005 129.778 C 300.775 135.92 305.378 133.082 293.613 137.328 C 284.201 140.726 295.148 151.019 300.775 153.902 C 308.959 158.096 314.995 157.96 320.724 160.98 C 326.453 163.999 327.544 158.778 327.374 155.79 C 327.374 153.902 327.272 152.521 324.816 147.237 Z' fill='%23E9B824'/%3E%3Cpath d='M 324.816 150.069 C 322.361 144.784 329.932 142.106 329.932 136.918 C 329.932 131.73 319.329 127.612 311.005 132.61 C 300.775 138.752 305.378 135.914 293.613 140.16 C 284.201 143.558 295.148 153.851 300.775 156.734 C 308.959 160.928 314.995 160.792 320.724 163.812 C 326.453 166.831 327.544 161.61 327.374 158.622 C 327.374 156.734 327.272 155.353 324.816 150.069 Z' stroke='%23EB9122' stroke-width='0.5' style='&%2310; fill: %23665f4a00;&%2310;'/%3E%3Cpath d='M 311.994 149.21 L 307.647 145.16 C 307.134 144.682 307.134 143.899 307.647 143.42 L 311.994 139.37' stroke='%23473603' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round' style='&%2310; fill: %23e9b824;&%2310;'/%3E%3C/svg%3E");
   background-size: contain;
   background-position: center;
@@ -105,10 +104,15 @@ salla-product-card:hover .s-product-card-content-footer{
   color: transparent;
   display: block;
   width: 70px;
+  background-color: transparent !important;
+  box-shadow: none !important;
 }
-[dir=rtl] .slick-prev:before{
+[dir=rtl] .slick-prev:before,button.s-slider-prev.s-slider-nav-arrow{
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='318.921 149.7714 39.0985 39.4979'%3E%3Cpath d='M 323.921 170.708 C 326.321 165.098 318.921 162.255 318.921 156.746 C 318.921 151.238 329.285 146.866 337.421 152.172 C 347.421 158.693 342.921 155.68 354.421 160.189 C 363.621 163.796 352.921 174.724 347.421 177.785 C 339.421 182.238 333.521 182.093 327.921 185.299 C 322.321 188.505 321.254 182.962 321.421 179.789 C 321.421 177.785 321.521 176.319 323.921 170.708 Z' fill='%23E9B824'/%3E%3Cpath d='M 323.921 173.713 C 326.321 168.103 318.921 165.26 318.921 159.751 C 318.921 154.243 329.285 149.871 337.421 155.177 C 347.421 161.698 342.921 158.685 354.421 163.194 C 363.621 166.8 352.921 177.729 347.421 180.79 C 339.421 185.243 333.521 185.098 327.921 188.304 C 322.321 191.51 321.254 185.967 321.421 182.794 C 321.421 180.79 321.521 179.324 323.921 173.713 Z' stroke='%23EB9122' stroke-width='0.5' style='&%2310; fill: transparent;&%2310;'/%3E%3Cpath d='M 335.959 173.095 L 340.306 168.74 C 340.819 168.226 340.819 167.384 340.306 166.87 L 335.959 162.515' stroke='%23473603' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round' style='&%2310; fill: %23e9b824;&%2310;'/%3E%3C/svg%3E");
 
+}
+button.s-slider-prev.s-slider-nav-arrow svg,button.s-slider-next.s-slider-nav-arrow svg{
+  display: none;
 }
 [dir=rtl] .slick-prev {
   right: unset !important;
@@ -203,6 +207,31 @@ salla-add-product-button.hydrated button{
   .slick-prev {
     left: 0;
   }
+  .new-slide.text-white {
+    flex-wrap: wrap;
+    align-items: normal;
+}
+.middel-text {
+  order: 1;
+  width: 100%;
+}
+.bannar-first-img{
+  width: 50% !important;
+  order: 2;
+}
+.bannar-second-img{
+  width: 50% !important;
+  order: 3;
+}
+.bannar-first-img,.bannar-second-img{
+  height: auto !important;
+}
+.feature-slider .swiper-slide, .category-slider .swiper-slide {
+  width: 102% !important;
+}
+.swiper.s-slider-container.swiper-initialized.swiper-horizontal.swiper-pointer-events.swiper-rtl {
+  padding: 0;
+}
 }
 @-webkit-keyframes slide-fwd-center {
   0% {

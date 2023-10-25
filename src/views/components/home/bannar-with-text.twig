@@ -9,11 +9,7 @@
 <section class="s-block home-slider s-block--hero-slider s-block--full-bg wide-placeholder">
 	<salla-slider id="main-slider-{{ position }}" class="home-slider main-slider" auto-play loop type="fullwidth">
 		<div slot="items">
-			{% for slide in component.collection %}
-			<style>
-			 .slide-lnk{
-			 }
-			</style>
+			{# {% for slide in component.collection %}
 				<div class="swiper-lazy-wrap w-full min-h-[300px] lg:min-h-[528px] " style="background-color: {{component.color_bg}};">
 					<div data-background="{{ component.img_bg }}" class="swiper-lazy"></div>
 					<div class="flex-center container pb-16 sm:pb-0 home-slider__content relative h-full">
@@ -35,14 +31,15 @@
 						</div>
 					</div>
 				</div>
-			{% endfor %}
+			{% endfor %} #}
+						{% include 'components.home.tw' with {bannar:slide,cate:"",component:component} %}
 		</div>
 	</salla-slider>
 </section>
 {% else %}
 <section class="s-block s-block--features container {{ component.collection|length == 1 ? "oneElement" : "" }} " >
 		<div class="grid lg:grid-cols-{{component.collection|length}} md:grid-cols-{{component.collection|length}} gap-4 sm:gap-6 xl:gap-8">
-			{% for slide in component.collection %}
+			{# {% for slide in component.collection %}
 				<div class="swiper-lazy-wrap w-full min-h-[300px] lg:min-h-[528px] " style="background-color: {{component.color_bg}};">
 					<div data-background="{{ component.img_bg }}" class="swiper-lazy"></div>
 					<div class="flex-center container pb-16 sm:pb-0 home-slider__content relative h-full">
@@ -63,7 +60,9 @@
 						</div>
 					</div>
 				</div>
-			{% endfor %}
+			{% endfor %} #}
+						{% include 'components.home.tw' with {bannar:slide,cate:"",component:component} %}
+
 		</div>
 	</section>
 {% endif %}
@@ -74,7 +73,6 @@
   import splitType from 'https://unpkg.com/split-type@0.3.3/lib/SplitType.js';
   setTimeout(()=>{
 const ourText2 = new splitType('.slide-title', { types: 'word' });
-  console.log("fffffffff",ourText2)
     const chars = ourText2.words;
     gsap.fromTo(
       chars,

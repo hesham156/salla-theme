@@ -1,1 +1,39 @@
-<h1> fdfdf {{ alt }}</h1>
+{% if bannar=="" %} 
+     {% for cate in component.links %}
+                                <div class="s-block--features__item" >
+                                    <a href="{{ cate.url }}">
+                                    <div class="feature-icon">
+                                    <img src="{{ cate.image }}"/>
+                                    </div>
+                                    <div>
+                                    <h2 class="text-center">{{ cate.string }}</h2>
+                                    </div>
+                                    </a>
+                                    
+                                </div>
+        {% endfor %}
+{% endif %}
+{% if cate=="" %}
+        {% for slide in component.collection %}
+				<div class="swiper-lazy-wrap w-full min-h-[300px] lg:min-h-[528px] " style="background-color: {{component.color_bg}};">
+					<div data-background="{{ component.img_bg }}" class="swiper-lazy"></div>
+					<div class="flex-center container pb-16 sm:pb-0 home-slider__content relative h-full">
+						<div class="new-slide w-4/6 text-center md:w-7/12 lg:w-5/12 text-white ">
+							<div style="width: 700px;" class="bannar-first-img ">
+								<img class="scale-up-ver-bottom" src={{ slide.second_img }} alt="">
+							</div>
+							<div class="middel-text ">
+								<h3>{{ slide.bannar_title }}</h3>
+								<p>{{ slide.bannar_des }}</p>
+								<a class="slide-lnk anime-item" href="{{slide.btn_lnk}}" style='color:{{ component.btn_color }};background-image: url("{{ svg }}")'>
+										{{slide.btn_text}}
+								</a>
+							</div>
+							<div class="bannar-second-img ">
+								<img style="margin: auto; margin-left: 0;margin-bottom:0;" class="scale-up-ver-bottom" src={{ slide.first_img }} alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			{% endfor %}
+{% endif %}

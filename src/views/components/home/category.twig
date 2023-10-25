@@ -2,7 +2,7 @@
 		<div class="container">
 			<div class="middle-slider">
 				<div class="slideer" >
-					{% for cate in component.links %}
+					{# {% for cate in component.links %}
 						<div class="s-block--features__item" >
 							<a href="{{ cate.url }}">
 							<div class="feature-icon">
@@ -14,7 +14,9 @@
 							</a>
 							
 						</div>
-					{% endfor %}
+					{% endfor %} #}
+			{% include 'components.home.tw' with {cate:cate,bannar:""} %}
+
 				</div>
 			</div>
 
@@ -24,7 +26,7 @@
    <div class="container">
 		<salla-slider id="thumbs" loop="true" auto-play="true" show-controls="true" controls-outer="true" type="carousel">
 			<div slot="items">
-			{% for cate in component.links %}
+			{# {% for cate in component.links %}
 						<div class="s-block--features__item" >
 							<a href="{{ cate.url }}">
 							<div class="feature-icon">
@@ -36,7 +38,9 @@
 							</a>
 							
 						</div>
-					{% endfor %}
+			{% endfor %} #}
+			{% include 'components.home.tw' with {cate:cate,bannar:""} %}
+
 			</div>
 		</salla-slider>
 		</div>

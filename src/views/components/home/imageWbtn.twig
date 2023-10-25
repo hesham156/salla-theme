@@ -1,0 +1,52 @@
+{% if component.aslaedr == true %}
+
+        <section class="container">
+            <salla-slider auto-play loop type="fullwidth">
+                <div slot="items">
+                      {% for item in component.collection %}
+                       <style>
+                        .card{
+                            background-size: 100% 100%;
+                            background-position: center;
+                            background-repeat: no-repeat;
+
+                        }
+                        .card{{ loop.index }}{
+                            background-image: url("{{ item.sorh_alkhlfeh }}");
+                            }
+                        .image img{
+                                height: 100%;
+                                margin: auto;
+                                scale: 1.5;
+                        }
+                        .content{
+                               text-align: center;
+
+                        }
+                        </style>
+                          <div class="card card{{ loop.index }}">
+                            <div class="image"><img height="100%" src="{{item.sorh_almntg}}" alt=""></div>
+                            <div class="content">
+                                <a href="#">
+                                <span class="title">
+                                  {{item.alaanoan}}
+                                </span>
+                                </a>
+
+                                <p class="desc">
+                                  {{item.alosf}}
+                                </p>
+
+                                <a class="action" href="{{ item.url }}">
+                                  {{item.ns_alzr}}
+                                <span aria-hidden="true">
+                                    →
+                                </span>
+                                </a>
+                            </div>
+                         </div>
+                      {% endfor %}
+                </div>
+            </salla-slider>
+        </section>
+{% endif %}

@@ -1177,11 +1177,20 @@
                 }
             ]
         },
-        { "key": "0394fe5b-629a-45e4-9deb-6c3080935575",
-        "title": "المميزات",
-        "icon": "sicon-store",
-        "path": "home.tw",
-        "fields": []}
+        {
+            "key": "0394fe5b-629a-45e4-9deb-6c3080935575",
+            "title": "المميزات",
+            "icon": "sicon-store",
+            "path": "home.tw",
+            "fields": []
+        },
+        {
+            "key": "36919093-0382-4e03-b0f3-c06b0f7e41a4",
+            "title": "صوره مع نص مع زر",
+            "icon": "sicon-store",
+            "path": "home.imageWbtn",
+            "fields": []
+        }
     ],
     "support_url": "https://example.com",
     "description": {

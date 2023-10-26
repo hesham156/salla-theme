@@ -305,7 +305,7 @@ salla-add-product-button.hydrated button {
 }
 
 .title {
-  color: #111827;
+  color: #FFF;
   font-size: 1.125rem;
   line-height: 1.75rem;
   font-weight: 600;
@@ -313,7 +313,7 @@ salla-add-product-button.hydrated button {
 
 .desc {
   margin-top: 0.5rem;
-  color: #6b7280;
+  color: #FFF;
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
@@ -351,6 +351,11 @@ salla-add-product-button.hydrated button {
   width: 33% !important;
   min-width: 33% !important;
   
+}
+section.grid .card{
+  min-width: 100% !important;
+  width: 100% !important;
+  height: 232.516px !important;
 }
 .imgWtext .swiper.s-slider-container.swiper-initialized.swiper-horizontal.swiper-pointer-events.swiper-rtl.swiper-backface-hidden {
   padding: 50px 0;

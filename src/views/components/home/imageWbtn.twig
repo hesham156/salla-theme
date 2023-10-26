@@ -1,11 +1,10 @@
 {% if component.aslaedr == true %}
-
 	<section class="container imgWtext">
 		<salla-slider id="main-slider-8" loop="true" auto-play="true" show-controls="true" controls-outer="true" type="carousel">
 			<div slot="items">
 				{% for item in component.collection %}
 
-					<div class="card card{{ loop.index }} {{component.aamode ? "column":"row"}}">
+					<div class="card card-{{ loop.index }}{{position}} {{component.aamode ? "column":"row"}}">
 						<style>
 							.card {
 								background-size: 100% 100%;
@@ -13,7 +12,7 @@
 								background-repeat: no-repeat;
 
 							}
-							.card{{loop.index}}{
+							.card-{{loop.index}}{{position}}{
 								background-image: url("{{ item.sorh_alkhlfeh }}");
 							}
 							.image img {
@@ -46,5 +45,51 @@
 				{% endfor %}
 			</div>
 		</salla-slider>
+	</section>
+{% else %}
+<section class="container imgWtext grid grid-cols-2">
+		
+				{% for item in component.collection %}
+
+					<div class="card card-{{ loop.index }}{{position}} {{component.aamode ? "column":"row"}}">
+						<style>
+							.card {
+								background-size: 100% 100%;
+								background-position: center;
+								background-repeat: no-repeat;
+
+							}
+							.card-{{loop.index}}{{position}}{
+								background-image: url("{{ item.sorh_alkhlfeh }}");
+							}
+							.image img {
+								height: 100%;
+								margin: auto;
+								scale: 1.5;
+							}
+							.content {
+								text-align: center;
+
+							}
+						</style>
+						{{item.sorh_almntg ? '<div class="image"><img height="100%" src="{{item.sorh_almntg}}" alt=""></div> ': "" }}
+						<div class="content">
+							<a href="#">
+								<span class="title">
+									{{item.alaanoan}}
+								</span>
+							</a>
+
+							<p class="desc">
+								{{item.alosf}}
+							</p>
+
+							<a class="action" href="{{ item.url }}">
+								{{item.ns_alzr}}
+							</a>
+						</div>
+					</div>
+				{% endfor %}
+		
 	</section>
 {% endif %}

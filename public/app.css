@@ -374,14 +374,14 @@ salla-add-product-button.hydrated button {
   background-color: rgba(239, 205, 255, 0);
 }
 .title {
-  color: #111827;
+  color: #FFF;
   font-size: 1.125rem;
   line-height: 1.75rem;
   font-weight: 600;
 }
 .desc {
   margin-top: 0.5rem;
-  color: #6b7280;
+  color: #FFF;
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
@@ -415,6 +415,11 @@ salla-add-product-button.hydrated button {
   width: 33% !important;
   min-width: 33% !important;
   
+}
+section.grid .card{
+  min-width: 100% !important;
+  width: 100% !important;
+  height: 232.516px !important;
 }
 .imgWtext .swiper.s-slider-container.swiper-initialized.swiper-horizontal.swiper-pointer-events.swiper-rtl.swiper-backface-hidden {
   padding: 50px 0;
@@ -9135,6 +9140,11 @@ input[type=radio].sr-only:checked ~ div.s-product-options-donation-amount-currun
   grid-gap: 0.75rem;
   gap: 0.75rem;
 }
+section.s-product-options-thumbnails-wrapper .card{
+  min-width: 100%;
+  width: 100%;
+  height: 232.516px;
+}
 .s-block--features-products.two-cols .s-product-options-thumbnails-wrapper .product-entry__title a{
   overflow: hidden;
   display: -webkit-box;
@@ -9567,6 +9577,11 @@ input[type=radio].sr-only:checked ~ div.s-product-options-donation-amount-curren
 .s-products-list-wrapper{
   margin-bottom: 2rem;
   display: grid;
+}
+section.s-products-list-wrapper .card{
+  min-width: 100%;
+  width: 100%;
+  height: 232.516px;
 }
 .s-block--features-products.two-cols .s-products-list-wrapper .product-entry__title a{
   overflow: hidden;
@@ -12017,6 +12032,11 @@ salla-slider .model-entry:before{
   grid-template-columns: repeat(4, minmax(0, 1fr));
   grid-gap: 1.5rem;
   gap: 1.5rem;
+}
+section.s-slider-grid-thumbs .card{
+  min-width: 100%;
+  width: 100%;
+  height: 232.516px;
 }
 .s-block--features-products.two-cols .s-slider-grid-thumbs .product-entry__title a{
   overflow: hidden;
@@ -18667,6 +18687,11 @@ input[type=radio].sr-only:checked ~ div.loyalty-star {
   grid-template-columns: repeat(1, minmax(0, 1fr));
   grid-gap: 0.625rem;
   gap: 0.625rem;
+}
+section.points-ways__list .card{
+  min-width: 100%;
+  width: 100%;
+  height: 232.516px;
 }
 .s-block--features-products.two-cols .points-ways__list .product-entry__title a{
   overflow: hidden;

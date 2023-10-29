@@ -28,6 +28,19 @@ class App extends AppHelpers {
     this.status = 'ready';
     document.dispatchEvent(new CustomEvent('theme::ready'));
     this.log('Theme Loaded 🎉');
+    salla.storage.set('user', { name:'Ahmed' })
+    const queryParams = {
+      source: 'categories',
+      source_value: [1, 2, 3]
+    };
+    salla.product.fetch()
+  .then((response) => {
+    console.log(response);
+
+  })
+  .catch((error) => {
+    console.error(error);
+  });
   }
 
   log(message) {
